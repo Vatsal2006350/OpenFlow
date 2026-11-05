@@ -1,8 +1,6 @@
 # OpenFlow
 
-A **local-first, cross-platform voice dictation app** — hold a key, speak, and clean text lands wherever your cursor is. Speech is transcribed on-device with Whisper and cleaned up (filler removal, self-corrections, punctuation, lists/newlines) by a local LLM, with an optional cloud path. It re-creates the workflow of a Wispr-Flow-style dictation tool from scratch, with its own name, palette, and code.
-
-> ⚠️ **This is a proof of concept, vibe-coded in a few hours.** It works and the core loop is real, but it is rough and needs a lot of polish, testing, and hardening before it's anything like production quality. Treat it as a starting point, not a finished product.
+A **local-first, cross-platform voice dictation and meeting-notes app**. Hold a key, speak, and formatted text is transcribed and inserted at the cursor. Meeting audio and notes can be processed and stored locally. Optional cloud cleanup providers are available when configured.
 
 ---
 
@@ -13,7 +11,7 @@ A **local-first, cross-platform voice dictation app** — hold a key, speak, and
 | **macOS 14+** | **Built and working** — developed and tested locally (Apple Silicon). |
 | **Windows 10/11** | **Built and working** — compiles and runs on real Windows 11 (MSVC). Push-to-talk (hold **Right Ctrl**), Whisper ASR, clipboard+`SendInput` paste, and cloud cleanup (OpenAI or any OpenAI-compatible API, e.g. OpenRouter) are verified end-to-end. Auto-learn dictionary capture is still macOS-only; the local (on-device) LLM cleanup worker builds but is CPU-only for now (no CUDA/Vulkan yet). |
 
-Both platforms are build-from-source only for now — there's no signed installer/release pipeline yet, so `git clone` + the steps below is the way to run it on either OS.
+Both platforms are currently built from source. See the platform build steps below for prerequisites and setup.
 
 ---
 
