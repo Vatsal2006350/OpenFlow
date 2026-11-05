@@ -1,0 +1,643 @@
+timestamp_utc,kind,label,value,unit,command,rust_lines,swift_lines,typescript_lines,jac_lines,total_source_lines,lines_saved_vs_baseline,notes
+2026-11-04T20:56:57Z,source_snapshot,baseline,16163,lines,,11721,142,4300,0,16163,0,"Pre-migration nonblank physical source lines; product source only."
+2026-11-04T20:56:57Z,dev_iteration,ui-prod-build-initial,2.670,seconds,"pnpm --dir ui run build",11721,142,4300,0,16163,0,"One successful production build sample; compile output reported 0.331s Vite bundle time."
+2026-11-04T21:00:00Z,dev_iteration,rust-workspace-check-initial,30.800,seconds,"cargo check --workspace",11721,142,4300,0,16163,0,"Initial workspace check compiled C++ and native dependencies."
+2026-11-04T21:02:00Z,dev_iteration_median,ui-prod-build-warm,1.969,seconds,"pnpm --dir ui run build",11721,142,4300,0,16163,0,"Median of three successful warm runs recorded by Jac tracker."
+2026-11-04T21:03:00Z,dev_iteration_median,rust-check-warm,0.331,seconds,"cargo check --workspace",11721,142,4300,0,16163,0,"Median of three successful warm runs recorded by Jac tracker."
+2026-11-04T21:07:18Z,source_snapshot,current,16324,lines,,11721,142,4300,161,16324,-161,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T21:07:29Z,dev_iteration,jac-client-build-warm#1,3.306,seconds,jac build main.jac --client web,11721,142,4300,161,16324,-161,One successful command run.
+2026-11-04T21:07:32Z,dev_iteration,jac-client-build-warm#2,3.208,seconds,jac build main.jac --client web,11721,142,4300,161,16324,-161,One successful command run.
+2026-11-04T21:07:36Z,dev_iteration,jac-client-build-warm#3,3.112,seconds,jac build main.jac --client web,11721,142,4300,161,16324,-161,One successful command run.
+2026-11-04T21:07:36Z,dev_iteration_median,jac-client-build-warm,3.208,seconds,jac build main.jac --client web,11721,142,4300,161,16324,-161,Median of 3 successful run(s).
+2026-11-04T21:16:20Z,source_snapshot,current,16552,lines,,11721,142,4300,389,16552,-389,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T21:25:20Z,source_snapshot,current,16620,lines,,11721,142,4300,457,16620,-457,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T21:25:27Z,dev_iteration,jac-overlay-build#1,2.977,seconds,jac build main.jac --client web,11721,142,4300,457,16620,-457,One successful command run.
+2026-11-04T21:25:30Z,dev_iteration,jac-overlay-build#2,2.754,seconds,jac build main.jac --client web,11721,142,4300,457,16620,-457,One successful command run.
+2026-11-04T21:25:33Z,dev_iteration,jac-overlay-build#3,2.754,seconds,jac build main.jac --client web,11721,142,4300,457,16620,-457,One successful command run.
+2026-11-04T21:25:33Z,dev_iteration_median,jac-overlay-build,2.754,seconds,jac build main.jac --client web,11721,142,4300,457,16620,-457,Median of 3 successful run(s).
+2026-11-04T21:27:57Z,dev_iteration,jac-overlay-build-final#1,3.089,seconds,jac build main.jac --client web,11721,142,4300,466,16629,-466,One successful command run.
+2026-11-04T21:28:00Z,dev_iteration,jac-overlay-build-final#2,3.029,seconds,jac build main.jac --client web,11721,142,4300,466,16629,-466,One successful command run.
+2026-11-04T21:28:03Z,dev_iteration,jac-overlay-build-final#3,3.001,seconds,jac build main.jac --client web,11721,142,4300,466,16629,-466,One successful command run.
+2026-11-04T21:28:03Z,dev_iteration_median,jac-overlay-build-final,3.029,seconds,jac build main.jac --client web,11721,142,4300,466,16629,-466,Median of 3 successful run(s).
+2026-11-04T21:28:16Z,source_snapshot,current,16629,lines,,11721,142,4300,466,16629,-466,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T21:34:48Z,dev_iteration,jac-meeting-ui-build#1,3.170,seconds,jac build main.jac --client web,11721,142,4300,739,16902,-739,One successful command run.
+2026-11-04T21:34:51Z,dev_iteration,jac-meeting-ui-build#2,3.004,seconds,jac build main.jac --client web,11721,142,4300,739,16902,-739,One successful command run.
+2026-11-04T21:34:55Z,dev_iteration,jac-meeting-ui-build#3,3.194,seconds,jac build main.jac --client web,11721,142,4300,739,16902,-739,One successful command run.
+2026-11-04T21:34:55Z,dev_iteration_median,jac-meeting-ui-build,3.170,seconds,jac build main.jac --client web,11721,142,4300,739,16902,-739,Median of 3 successful run(s).
+2026-11-04T21:34:58Z,source_snapshot,current,16902,lines,,11721,142,4300,739,16902,-739,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T21:39:47Z,dev_iteration,jac-hub-meeting-ui-build#1,3.428,seconds,jac build main.jac --client web,11721,142,4300,955,17118,-955,One successful command run.
+2026-11-04T21:39:51Z,dev_iteration,jac-hub-meeting-ui-build#2,3.902,seconds,jac build main.jac --client web,11721,142,4300,955,17118,-955,One successful command run.
+2026-11-04T21:39:55Z,dev_iteration,jac-hub-meeting-ui-build#3,3.714,seconds,jac build main.jac --client web,11721,142,4300,955,17118,-955,One successful command run.
+2026-11-04T21:39:55Z,dev_iteration_median,jac-hub-meeting-ui-build,3.714,seconds,jac build main.jac --client web,11721,142,4300,955,17118,-955,Median of 3 successful run(s).
+2026-11-04T21:39:58Z,source_snapshot,current,17118,lines,,11721,142,4300,955,17118,-955,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T21:44:11Z,source_snapshot,current,17136,lines,,11721,142,4300,973,17136,-973,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T21:45:14Z,source_snapshot,current,17143,lines,,11721,142,4300,980,17143,-980,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T21:45:24Z,dev_iteration,jac-hub-meeting-ui-build#1,3.631,seconds,jac build main.jac --client web,11721,142,4300,980,17143,-980,One successful command run.
+2026-11-04T21:45:27Z,dev_iteration,jac-hub-meeting-ui-build#2,3.539,seconds,jac build main.jac --client web,11721,142,4300,980,17143,-980,One successful command run.
+2026-11-04T21:45:31Z,dev_iteration,jac-hub-meeting-ui-build#3,3.453,seconds,jac build main.jac --client web,11721,142,4300,980,17143,-980,One successful command run.
+2026-11-04T21:45:31Z,dev_iteration_median,jac-hub-meeting-ui-build,3.539,seconds,jac build main.jac --client web,11721,142,4300,980,17143,-980,Median of 3 successful run(s).
+2026-11-04T21:50:17Z,dev_iteration,jac-shell-home-meetings-build#1,3.832,seconds,jac build main.jac --client web,11721,142,4300,1062,17225,-1062,One successful command run.
+2026-11-04T21:50:20Z,dev_iteration,jac-shell-home-meetings-build#2,3.860,seconds,jac build main.jac --client web,11721,142,4300,1062,17225,-1062,One successful command run.
+2026-11-04T21:50:24Z,dev_iteration,jac-shell-home-meetings-build#3,3.795,seconds,jac build main.jac --client web,11721,142,4300,1062,17225,-1062,One successful command run.
+2026-11-04T21:50:24Z,dev_iteration_median,jac-shell-home-meetings-build,3.832,seconds,jac build main.jac --client web,11721,142,4300,1062,17225,-1062,Median of 3 successful run(s).
+2026-11-04T21:50:25Z,source_snapshot,current,17225,lines,,11721,142,4300,1062,17225,-1062,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T21:52:19Z,dev_iteration,jac-homehub-meeting-build#1,4.554,seconds,jac build main.jac --client web,11738,142,4300,1065,17245,-1082,One successful command run.
+2026-11-04T21:52:22Z,dev_iteration,jac-homehub-meeting-build#2,3.857,seconds,jac build main.jac --client web,11738,142,4300,1065,17245,-1082,One successful command run.
+2026-11-04T21:52:26Z,dev_iteration,jac-homehub-meeting-build#3,3.970,seconds,jac build main.jac --client web,11738,142,4300,1065,17245,-1082,One successful command run.
+2026-11-04T21:52:27Z,dev_iteration_median,jac-homehub-meeting-build,3.970,seconds,jac build main.jac --client web,11738,142,4300,1065,17245,-1082,Median of 3 successful run(s).
+2026-11-04T21:52:29Z,dev_iteration,rust-app-check#1,1.478,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11738,142,4300,1065,17245,-1082,One successful command run.
+2026-11-04T21:52:29Z,dev_iteration,rust-app-check#2,0.206,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11738,142,4300,1065,17245,-1082,One successful command run.
+2026-11-04T21:52:29Z,dev_iteration,rust-app-check#3,0.194,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11738,142,4300,1065,17245,-1082,One successful command run.
+2026-11-04T21:52:29Z,dev_iteration_median,rust-app-check,0.206,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11738,142,4300,1065,17245,-1082,Median of 3 successful run(s).
+2026-11-04T21:52:30Z,source_snapshot,current,17245,lines,,11738,142,4300,1065,17245,-1082,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T22:00:00Z,dev_iteration,jac-stats-home-shell-build#1,3.732,seconds,jac build main.jac --client web,11749,142,4300,1102,17293,-1130,One successful command run.
+2026-11-04T22:00:03Z,dev_iteration,jac-stats-home-shell-build#2,3.728,seconds,jac build main.jac --client web,11749,142,4300,1102,17293,-1130,One successful command run.
+2026-11-04T22:00:08Z,dev_iteration,jac-stats-home-shell-build#3,4.240,seconds,jac build main.jac --client web,11749,142,4300,1102,17293,-1130,One successful command run.
+2026-11-04T22:00:08Z,dev_iteration_median,jac-stats-home-shell-build,3.732,seconds,jac build main.jac --client web,11749,142,4300,1102,17293,-1130,Median of 3 successful run(s).
+2026-11-04T22:00:08Z,source_snapshot,current,17293,lines,,11749,142,4300,1102,17293,-1130,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T22:04:18Z,dev_iteration,jac-dictionary-home-meetings-build#1,3.835,seconds,jac build main.jac --client web,11749,142,4300,1188,17379,-1216,One successful command run.
+2026-11-04T22:04:22Z,dev_iteration,jac-dictionary-home-meetings-build#2,3.625,seconds,jac build main.jac --client web,11749,142,4300,1188,17379,-1216,One successful command run.
+2026-11-04T22:04:25Z,dev_iteration,jac-dictionary-home-meetings-build#3,3.530,seconds,jac build main.jac --client web,11749,142,4300,1188,17379,-1216,One successful command run.
+2026-11-04T22:04:25Z,dev_iteration_median,jac-dictionary-home-meetings-build,3.625,seconds,jac build main.jac --client web,11749,142,4300,1188,17379,-1216,Median of 3 successful run(s).
+2026-11-04T22:04:26Z,source_snapshot,current,17379,lines,,11749,142,4300,1188,17379,-1216,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T22:12:19Z,source_snapshot,current,17525,lines,,11764,142,4300,1319,17525,-1362,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T22:12:44Z,dev_iteration,jac-hub-all-pages-build#1,4.261,seconds,jac build main.jac --client web,11764,142,4300,1319,17525,-1362,One successful command run.
+2026-11-04T22:12:48Z,dev_iteration,jac-hub-all-pages-build#2,4.064,seconds,jac build main.jac --client web,11764,142,4300,1319,17525,-1362,One successful command run.
+2026-11-04T22:12:53Z,dev_iteration,jac-hub-all-pages-build#3,4.389,seconds,jac build main.jac --client web,11764,142,4300,1319,17525,-1362,One successful command run.
+2026-11-04T22:12:53Z,dev_iteration_median,jac-hub-all-pages-build,4.261,seconds,jac build main.jac --client web,11764,142,4300,1319,17525,-1362,Median of 3 successful run(s).
+2026-11-04T22:14:31Z,dev_iteration,jac-hub-all-pages-stats-parity-build#1,4.293,seconds,jac build main.jac --client web,11764,142,4300,1323,17529,-1366,One successful command run.
+2026-11-04T22:14:35Z,dev_iteration,jac-hub-all-pages-stats-parity-build#2,4.442,seconds,jac build main.jac --client web,11764,142,4300,1323,17529,-1366,One successful command run.
+2026-11-04T22:14:39Z,dev_iteration,jac-hub-all-pages-stats-parity-build#3,4.234,seconds,jac build main.jac --client web,11764,142,4300,1323,17529,-1366,One successful command run.
+2026-11-04T22:14:39Z,dev_iteration_median,jac-hub-all-pages-stats-parity-build,4.293,seconds,jac build main.jac --client web,11764,142,4300,1323,17529,-1366,Median of 3 successful run(s).
+2026-11-04T22:14:40Z,source_snapshot,current,17529,lines,,11764,142,4300,1323,17529,-1366,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T22:20:04Z,dev_iteration,jac-hub-settings-build#1,5.182,seconds,jac build main.jac --client web,11764,142,4300,1462,17668,-1505,One successful command run.
+2026-11-04T22:20:09Z,dev_iteration,jac-hub-settings-build#2,4.885,seconds,jac build main.jac --client web,11764,142,4300,1462,17668,-1505,One successful command run.
+2026-11-04T22:20:14Z,dev_iteration,jac-hub-settings-build#3,4.784,seconds,jac build main.jac --client web,11764,142,4300,1462,17668,-1505,One successful command run.
+2026-11-04T22:20:14Z,dev_iteration_median,jac-hub-settings-build,4.885,seconds,jac build main.jac --client web,11764,142,4300,1462,17668,-1505,Median of 3 successful run(s).
+2026-11-04T22:20:14Z,source_snapshot,current,17668,lines,,11764,142,4300,1462,17668,-1505,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T22:24:46Z,dev_iteration,jac-cleanup-settings-build#1,6.908,seconds,jac build main.jac --client web,11764,142,4300,1535,17741,-1578,One successful command run.
+2026-11-04T22:24:53Z,dev_iteration,jac-cleanup-settings-build#2,6.385,seconds,jac build main.jac --client web,11764,142,4300,1535,17741,-1578,One successful command run.
+2026-11-04T22:24:59Z,dev_iteration,jac-cleanup-settings-build#3,5.689,seconds,jac build main.jac --client web,11764,142,4300,1535,17741,-1578,One successful command run.
+2026-11-04T22:24:59Z,dev_iteration_median,jac-cleanup-settings-build,6.385,seconds,jac build main.jac --client web,11764,142,4300,1535,17741,-1578,Median of 3 successful run(s).
+2026-11-04T22:25:00Z,source_snapshot,current,17741,lines,,11764,142,4300,1535,17741,-1578,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T22:37:47Z,source_snapshot,current,18097,lines,,11987,142,4300,1668,18097,-1934,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T22:37:56Z,dev_iteration,jac-cleanup-bridge-build#1,5.256,seconds,jac build main.jac --client web,11987,142,4300,1668,18097,-1934,One successful command run.
+2026-11-04T22:38:01Z,dev_iteration,jac-cleanup-bridge-build#2,4.890,seconds,jac build main.jac --client web,11987,142,4300,1668,18097,-1934,One successful command run.
+2026-11-04T22:38:05Z,dev_iteration,jac-cleanup-bridge-build#3,4.582,seconds,jac build main.jac --client web,11987,142,4300,1668,18097,-1934,One successful command run.
+2026-11-04T22:38:06Z,dev_iteration_median,jac-cleanup-bridge-build,4.890,seconds,jac build main.jac --client web,11987,142,4300,1668,18097,-1934,Median of 3 successful run(s).
+2026-11-04T22:45:37Z,source_snapshot,current,18097,lines,,11987,142,4300,1668,18097,-1934,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T22:47:40Z,source_snapshot,current,18120,lines,,12010,142,4300,1668,18120,-1957,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:04:15Z,source_snapshot,current,18344,lines,,12102,142,4300,1800,18344,-2181,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:04:28Z,dev_iteration,jac-client-build-dictation-bridge#1,5.050,seconds,jac build main.jac --client web,12102,142,4300,1800,18344,-2181,One successful command run.
+2026-11-04T23:04:32Z,dev_iteration,jac-client-build-dictation-bridge#2,4.671,seconds,jac build main.jac --client web,12102,142,4300,1800,18344,-2181,One successful command run.
+2026-11-04T23:04:37Z,dev_iteration,jac-client-build-dictation-bridge#3,4.836,seconds,jac build main.jac --client web,12102,142,4300,1800,18344,-2181,One successful command run.
+2026-11-04T23:04:37Z,dev_iteration_median,jac-client-build-dictation-bridge,4.836,seconds,jac build main.jac --client web,12102,142,4300,1800,18344,-2181,Median of 3 successful run(s).
+2026-11-04T23:05:46Z,source_snapshot,current,18346,lines,,12104,142,4300,1800,18346,-2183,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:10:25Z,dev_iteration,jac-mcp-check#1,1.621,seconds,jac check meetings_mcp.jac meetings_store.jac,11997,142,4300,1800,18239,-2076,One successful command run.
+2026-11-04T23:10:26Z,dev_iteration,jac-mcp-check#2,1.603,seconds,jac check meetings_mcp.jac meetings_store.jac,11997,142,4300,1800,18239,-2076,One successful command run.
+2026-11-04T23:10:28Z,dev_iteration,jac-mcp-check#3,1.605,seconds,jac check meetings_mcp.jac meetings_store.jac,11997,142,4300,1800,18239,-2076,One successful command run.
+2026-11-04T23:10:28Z,dev_iteration_median,jac-mcp-check,1.605,seconds,jac check meetings_mcp.jac meetings_store.jac,11997,142,4300,1800,18239,-2076,Median of 3 successful run(s).
+2026-11-04T23:10:36Z,source_snapshot,current,18239,lines,,11997,142,4300,1800,18239,-2076,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:15:16Z,dev_iteration,jac-client-meeting-summary#1,4.711,seconds,jac build main.jac --client web,11992,142,4300,1871,18305,-2142,One successful command run.
+2026-11-04T23:15:21Z,dev_iteration,jac-client-meeting-summary#2,4.646,seconds,jac build main.jac --client web,11992,142,4300,1871,18305,-2142,One successful command run.
+2026-11-04T23:15:25Z,dev_iteration,jac-client-meeting-summary#3,4.724,seconds,jac build main.jac --client web,11992,142,4300,1871,18305,-2142,One successful command run.
+2026-11-04T23:15:25Z,dev_iteration_median,jac-client-meeting-summary,4.711,seconds,jac build main.jac --client web,11992,142,4300,1871,18305,-2142,Median of 3 successful run(s).
+2026-11-04T23:15:32Z,source_snapshot,current,18305,lines,,11992,142,4300,1871,18305,-2142,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:18:06Z,source_snapshot,current,18314,lines,,11970,142,4300,1902,18314,-2151,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:22:26Z,source_snapshot,current,18293,lines,,11850,142,4300,2001,18293,-2130,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:22:41Z,dev_iteration,jac-client-autolearn#1,4.689,seconds,jac build main.jac --client web,11850,142,4300,2001,18293,-2130,One successful command run.
+2026-11-04T23:22:46Z,dev_iteration,jac-client-autolearn#2,4.577,seconds,jac build main.jac --client web,11850,142,4300,2001,18293,-2130,One successful command run.
+2026-11-04T23:22:51Z,dev_iteration,jac-client-autolearn#3,4.603,seconds,jac build main.jac --client web,11850,142,4300,2001,18293,-2130,One successful command run.
+2026-11-04T23:22:51Z,dev_iteration_median,jac-client-autolearn,4.603,seconds,jac build main.jac --client web,11850,142,4300,2001,18293,-2130,Median of 3 successful run(s).
+2026-11-04T23:25:39Z,dev_iteration,jac-client-autolearn-unicode#1,4.614,seconds,jac build main.jac --client web,11850,142,4300,2026,18318,-2155,One successful command run.
+2026-11-04T23:25:44Z,dev_iteration,jac-client-autolearn-unicode#2,4.493,seconds,jac build main.jac --client web,11850,142,4300,2026,18318,-2155,One successful command run.
+2026-11-04T23:25:48Z,dev_iteration,jac-client-autolearn-unicode#3,4.714,seconds,jac build main.jac --client web,11850,142,4300,2026,18318,-2155,One successful command run.
+2026-11-04T23:25:48Z,dev_iteration_median,jac-client-autolearn-unicode,4.614,seconds,jac build main.jac --client web,11850,142,4300,2026,18318,-2155,Median of 3 successful run(s).
+2026-11-04T23:25:52Z,source_snapshot,current,18318,lines,,11850,142,4300,2026,18318,-2155,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:32:01Z,dev_iteration,jac-client-diagnostics#1,4.920,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,One successful command run.
+2026-11-04T23:32:06Z,dev_iteration,jac-client-diagnostics#2,4.869,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,One successful command run.
+2026-11-04T23:32:11Z,dev_iteration,jac-client-diagnostics#3,4.981,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,One successful command run.
+2026-11-04T23:32:11Z,dev_iteration_median,jac-client-diagnostics,4.920,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,Median of 3 successful run(s).
+2026-11-04T23:32:32Z,source_snapshot,current,18161,lines,,11619,142,4300,2100,18161,-1998,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:33:06Z,dev_iteration,jac-client-diagnostics-final#1,4.588,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,One successful command run.
+2026-11-04T23:33:11Z,dev_iteration,jac-client-diagnostics-final#2,4.599,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,One successful command run.
+2026-11-04T23:33:15Z,dev_iteration,jac-client-diagnostics-final#3,4.581,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,One successful command run.
+2026-11-04T23:33:15Z,dev_iteration_median,jac-client-diagnostics-final,4.588,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,Median of 3 successful run(s).
+2026-11-04T23:34:04Z,dev_iteration,jac-client-diagnostics-bridge#1,4.656,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,One successful command run.
+2026-11-04T23:34:09Z,dev_iteration,jac-client-diagnostics-bridge#2,4.637,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,One successful command run.
+2026-11-04T23:34:13Z,dev_iteration,jac-client-diagnostics-bridge#3,4.703,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,One successful command run.
+2026-11-04T23:34:13Z,dev_iteration_median,jac-client-diagnostics-bridge,4.656,seconds,jac build main.jac --client web,11619,142,4300,2100,18161,-1998,Median of 3 successful run(s).
+2026-11-04T23:34:21Z,source_snapshot,current,18161,lines,,11619,142,4300,2100,18161,-1998,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:35:28Z,dev_iteration,jac-client-diagnostics-final#1,4.626,seconds,jac build main.jac --client web,11617,142,4300,2100,18159,-1996,One successful command run.
+2026-11-04T23:35:32Z,dev_iteration,jac-client-diagnostics-final#2,4.740,seconds,jac build main.jac --client web,11617,142,4300,2100,18159,-1996,One successful command run.
+2026-11-04T23:35:37Z,dev_iteration,jac-client-diagnostics-final#3,4.741,seconds,jac build main.jac --client web,11617,142,4300,2100,18159,-1996,One successful command run.
+2026-11-04T23:35:37Z,dev_iteration_median,jac-client-diagnostics-final,4.740,seconds,jac build main.jac --client web,11617,142,4300,2100,18159,-1996,Median of 3 successful run(s).
+2026-11-04T23:35:38Z,source_snapshot,current,18159,lines,,11617,142,4300,2100,18159,-1996,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:42:55Z,dev_iteration,jac-client-model-prompt#1,4.750,seconds,jac build main.jac --client web,11632,142,4300,2209,18283,-2120,One successful command run.
+2026-11-04T23:43:00Z,dev_iteration,jac-client-model-prompt#2,4.668,seconds,jac build main.jac --client web,11632,142,4300,2209,18283,-2120,One successful command run.
+2026-11-04T23:43:05Z,dev_iteration,jac-client-model-prompt#3,4.674,seconds,jac build main.jac --client web,11632,142,4300,2209,18283,-2120,One successful command run.
+2026-11-04T23:43:05Z,dev_iteration_median,jac-client-model-prompt,4.674,seconds,jac build main.jac --client web,11632,142,4300,2209,18283,-2120,Median of 3 successful run(s).
+2026-11-04T23:43:13Z,source_snapshot,current,18284,lines,,11633,142,4300,2209,18284,-2121,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:51:10Z,dev_iteration,jac-client-model-policy#1,4.732,seconds,jac build main.jac --client web,11658,142,4300,2278,18378,-2215,One successful command run.
+2026-11-04T23:51:15Z,dev_iteration,jac-client-model-policy#2,4.658,seconds,jac build main.jac --client web,11658,142,4300,2278,18378,-2215,One successful command run.
+2026-11-04T23:51:19Z,dev_iteration,jac-client-model-policy#3,4.493,seconds,jac build main.jac --client web,11658,142,4300,2278,18378,-2215,One successful command run.
+2026-11-04T23:51:19Z,dev_iteration_median,jac-client-model-policy,4.658,seconds,jac build main.jac --client web,11658,142,4300,2278,18378,-2215,Median of 3 successful run(s).
+2026-11-04T23:51:20Z,source_snapshot,current,18378,lines,,11658,142,4300,2278,18378,-2215,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:52:20Z,dev_iteration,jac-client-model-policy-final#1,4.568,seconds,jac build main.jac --client web,11658,142,4300,2282,18382,-2219,One successful command run.
+2026-11-04T23:52:25Z,dev_iteration,jac-client-model-policy-final#2,4.524,seconds,jac build main.jac --client web,11658,142,4300,2282,18382,-2219,One successful command run.
+2026-11-04T23:52:30Z,dev_iteration,jac-client-model-policy-final#3,4.950,seconds,jac build main.jac --client web,11658,142,4300,2282,18382,-2219,One successful command run.
+2026-11-04T23:52:30Z,dev_iteration_median,jac-client-model-policy-final,4.568,seconds,jac build main.jac --client web,11658,142,4300,2282,18382,-2219,Median of 3 successful run(s).
+2026-11-04T23:52:30Z,source_snapshot,current,18382,lines,,11658,142,4300,2282,18382,-2219,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-04T23:58:22Z,dev_iteration,jac-client-model-state#1,4.852,seconds,jac build main.jac --client web,11582,142,4300,2307,18331,-2168,One successful command run.
+2026-11-04T23:58:27Z,dev_iteration,jac-client-model-state#2,4.558,seconds,jac build main.jac --client web,11582,142,4300,2307,18331,-2168,One successful command run.
+2026-11-04T23:58:31Z,dev_iteration,jac-client-model-state#3,4.478,seconds,jac build main.jac --client web,11582,142,4300,2307,18331,-2168,One successful command run.
+2026-11-04T23:58:31Z,dev_iteration_median,jac-client-model-state,4.558,seconds,jac build main.jac --client web,11582,142,4300,2307,18331,-2168,Median of 3 successful run(s).
+2026-11-04T23:58:38Z,source_snapshot,current,18331,lines,,11582,142,4300,2307,18331,-2168,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:05:37Z,dev_iteration,jac-cleanup-policy#1,4.895,seconds,jac build main.jac --client web,11496,142,4300,2443,18381,-2218,One successful command run.
+2026-11-05T00:05:43Z,dev_iteration,jac-cleanup-policy#2,5.712,seconds,jac build main.jac --client web,11496,142,4300,2443,18381,-2218,One successful command run.
+2026-11-05T00:05:49Z,dev_iteration,jac-cleanup-policy#3,5.995,seconds,jac build main.jac --client web,11496,142,4300,2443,18381,-2218,One successful command run.
+2026-11-05T00:05:49Z,dev_iteration_median,jac-cleanup-policy,5.712,seconds,jac build main.jac --client web,11496,142,4300,2443,18381,-2218,Median of 3 successful run(s).
+2026-11-05T00:06:03Z,source_snapshot,current,18381,lines,,11496,142,4300,2443,18381,-2218,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:14:02Z,dev_iteration,rust-check-macos-cleanup-bridge#1,0.495,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11495,142,4300,2443,18380,-2217,One successful command run.
+2026-11-05T00:14:02Z,dev_iteration,rust-check-macos-cleanup-bridge#2,0.177,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11495,142,4300,2443,18380,-2217,One successful command run.
+2026-11-05T00:14:02Z,dev_iteration,rust-check-macos-cleanup-bridge#3,0.173,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11495,142,4300,2443,18380,-2217,One successful command run.
+2026-11-05T00:14:02Z,dev_iteration_median,rust-check-macos-cleanup-bridge,0.177,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11495,142,4300,2443,18380,-2217,Median of 3 successful run(s).
+2026-11-05T00:14:10Z,source_snapshot,current,18380,lines,,11495,142,4300,2443,18380,-2217,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:16:29Z,source_snapshot,current,18423,lines,,11538,142,4300,2443,18423,-2260,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:17:18Z,source_snapshot,current,18398,lines,,11513,142,4300,2443,18398,-2235,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:19:00Z,source_snapshot,current,18373,lines,,11488,142,4300,2443,18373,-2210,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:19:49Z,dev_iteration,rust-check-cleanup-shared-adapter#1,0.569,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11488,142,4300,2443,18373,-2210,One successful command run.
+2026-11-05T00:19:49Z,dev_iteration,rust-check-cleanup-shared-adapter#2,0.180,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11488,142,4300,2443,18373,-2210,One successful command run.
+2026-11-05T00:19:49Z,dev_iteration,rust-check-cleanup-shared-adapter#3,0.175,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11488,142,4300,2443,18373,-2210,One successful command run.
+2026-11-05T00:19:49Z,dev_iteration_median,rust-check-cleanup-shared-adapter,0.180,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11488,142,4300,2443,18373,-2210,Median of 3 successful run(s).
+2026-11-05T00:22:48Z,dev_iteration,jac-client-cleanup-token-budget#1,5.431,seconds,jac build main.jac --client web,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:22:52Z,dev_iteration,jac-client-cleanup-token-budget#2,4.743,seconds,jac build main.jac --client web,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:22:57Z,dev_iteration,jac-client-cleanup-token-budget#3,4.476,seconds,jac build main.jac --client web,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:22:57Z,dev_iteration_median,jac-client-cleanup-token-budget,4.743,seconds,jac build main.jac --client web,11529,142,4300,2449,18420,-2257,Median of 3 successful run(s).
+2026-11-05T00:23:03Z,dev_iteration,rust-check-cleanup-token-budget#1,0.434,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:23:03Z,dev_iteration,rust-check-cleanup-token-budget#2,0.183,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:23:03Z,dev_iteration,rust-check-cleanup-token-budget#3,0.192,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:23:03Z,dev_iteration_median,rust-check-cleanup-token-budget,0.192,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11529,142,4300,2449,18420,-2257,Median of 3 successful run(s).
+2026-11-05T00:23:10Z,source_snapshot,current,18420,lines,,11529,142,4300,2449,18420,-2257,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:25:05Z,dev_iteration,jac-client-cleanup-budget-final#1,4.949,seconds,jac build main.jac --client web,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:25:10Z,dev_iteration,jac-client-cleanup-budget-final#2,4.916,seconds,jac build main.jac --client web,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:25:15Z,dev_iteration,jac-client-cleanup-budget-final#3,4.944,seconds,jac build main.jac --client web,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:25:15Z,dev_iteration_median,jac-client-cleanup-budget-final,4.944,seconds,jac build main.jac --client web,11529,142,4300,2449,18420,-2257,Median of 3 successful run(s).
+2026-11-05T00:25:28Z,dev_iteration,rust-check-cleanup-budget-final#1,1.656,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:25:28Z,dev_iteration,rust-check-cleanup-budget-final#2,0.195,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:25:29Z,dev_iteration,rust-check-cleanup-budget-final#3,0.201,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11529,142,4300,2449,18420,-2257,One successful command run.
+2026-11-05T00:25:29Z,dev_iteration_median,rust-check-cleanup-budget-final,0.201,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11529,142,4300,2449,18420,-2257,Median of 3 successful run(s).
+2026-11-05T00:25:55Z,source_snapshot,current,18408,lines,,11517,142,4300,2449,18408,-2245,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:27:04Z,dev_iteration,rust-check-cleanup-budget-verified#1,0.604,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11517,142,4300,2449,18408,-2245,One successful command run.
+2026-11-05T00:27:04Z,dev_iteration,rust-check-cleanup-budget-verified#2,0.215,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11517,142,4300,2449,18408,-2245,One successful command run.
+2026-11-05T00:27:04Z,dev_iteration,rust-check-cleanup-budget-verified#3,0.204,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11517,142,4300,2449,18408,-2245,One successful command run.
+2026-11-05T00:27:04Z,dev_iteration_median,rust-check-cleanup-budget-verified,0.215,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11517,142,4300,2449,18408,-2245,Median of 3 successful run(s).
+2026-11-05T00:33:09Z,source_snapshot,current,18475,lines,,11517,142,4300,2516,18475,-2312,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:33:17Z,dev_iteration,jac-client-onboarding-gate#1,4.571,seconds,jac build main.jac --client web,11517,142,4300,2516,18475,-2312,One successful command run.
+2026-11-05T00:33:22Z,dev_iteration,jac-client-onboarding-gate#2,4.757,seconds,jac build main.jac --client web,11517,142,4300,2516,18475,-2312,One successful command run.
+2026-11-05T00:33:27Z,dev_iteration,jac-client-onboarding-gate#3,4.579,seconds,jac build main.jac --client web,11517,142,4300,2516,18475,-2312,One successful command run.
+2026-11-05T00:33:27Z,dev_iteration_median,jac-client-onboarding-gate,4.579,seconds,jac build main.jac --client web,11517,142,4300,2516,18475,-2312,Median of 3 successful run(s).
+2026-11-05T00:34:06Z,source_snapshot,current,18480,lines,,11517,142,4300,2521,18480,-2317,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:34:14Z,dev_iteration,jac-client-onboarding-gate-final#1,4.500,seconds,jac build main.jac --client web,11517,142,4300,2521,18480,-2317,One successful command run.
+2026-11-05T00:34:19Z,dev_iteration,jac-client-onboarding-gate-final#2,4.817,seconds,jac build main.jac --client web,11517,142,4300,2521,18480,-2317,One successful command run.
+2026-11-05T00:34:24Z,dev_iteration,jac-client-onboarding-gate-final#3,4.777,seconds,jac build main.jac --client web,11517,142,4300,2521,18480,-2317,One successful command run.
+2026-11-05T00:34:24Z,dev_iteration_median,jac-client-onboarding-gate-final,4.777,seconds,jac build main.jac --client web,11517,142,4300,2521,18480,-2317,Median of 3 successful run(s).
+2026-11-05T00:36:48Z,source_snapshot,current,18521,lines,,11517,142,4300,2562,18521,-2358,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:36:56Z,dev_iteration,jac-client-hub-notices#1,4.524,seconds,jac build main.jac --client web,11517,142,4300,2562,18521,-2358,One successful command run.
+2026-11-05T00:37:00Z,dev_iteration,jac-client-hub-notices#2,4.568,seconds,jac build main.jac --client web,11517,142,4300,2562,18521,-2358,One successful command run.
+2026-11-05T00:37:05Z,dev_iteration,jac-client-hub-notices#3,4.539,seconds,jac build main.jac --client web,11517,142,4300,2562,18521,-2358,One successful command run.
+2026-11-05T00:37:05Z,dev_iteration_median,jac-client-hub-notices,4.539,seconds,jac build main.jac --client web,11517,142,4300,2562,18521,-2358,Median of 3 successful run(s).
+2026-11-05T00:38:35Z,source_snapshot,current,18545,lines,,11517,142,4300,2586,18545,-2382,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:38:43Z,dev_iteration,jac-client-hub-notices-first-run#1,4.583,seconds,jac build main.jac --client web,11517,142,4300,2586,18545,-2382,One successful command run.
+2026-11-05T00:38:48Z,dev_iteration,jac-client-hub-notices-first-run#2,4.590,seconds,jac build main.jac --client web,11517,142,4300,2586,18545,-2382,One successful command run.
+2026-11-05T00:38:52Z,dev_iteration,jac-client-hub-notices-first-run#3,4.586,seconds,jac build main.jac --client web,11517,142,4300,2586,18545,-2382,One successful command run.
+2026-11-05T00:38:52Z,dev_iteration_median,jac-client-hub-notices-first-run,4.586,seconds,jac build main.jac --client web,11517,142,4300,2586,18545,-2382,Median of 3 successful run(s).
+2026-11-05T00:42:13Z,source_snapshot,current,18576,lines,,11517,142,4300,2617,18576,-2413,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:42:21Z,dev_iteration,jac-client-model-banner#1,4.584,seconds,jac build main.jac --client web,11517,142,4300,2617,18576,-2413,One successful command run.
+2026-11-05T00:42:26Z,dev_iteration,jac-client-model-banner#2,4.612,seconds,jac build main.jac --client web,11517,142,4300,2617,18576,-2413,One successful command run.
+2026-11-05T00:42:31Z,dev_iteration,jac-client-model-banner#3,4.597,seconds,jac build main.jac --client web,11517,142,4300,2617,18576,-2413,One successful command run.
+2026-11-05T00:42:31Z,dev_iteration_median,jac-client-model-banner,4.597,seconds,jac build main.jac --client web,11517,142,4300,2617,18576,-2413,Median of 3 successful run(s).
+2026-11-05T00:43:32Z,source_snapshot,current,18584,lines,,11517,142,4300,2625,18584,-2421,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:43:40Z,dev_iteration,jac-client-model-banner-bridge#1,4.610,seconds,jac build main.jac --client web,11517,142,4300,2625,18584,-2421,One successful command run.
+2026-11-05T00:43:45Z,dev_iteration,jac-client-model-banner-bridge#2,4.582,seconds,jac build main.jac --client web,11517,142,4300,2625,18584,-2421,One successful command run.
+2026-11-05T00:43:49Z,dev_iteration,jac-client-model-banner-bridge#3,4.579,seconds,jac build main.jac --client web,11517,142,4300,2625,18584,-2421,One successful command run.
+2026-11-05T00:43:49Z,dev_iteration_median,jac-client-model-banner-bridge,4.582,seconds,jac build main.jac --client web,11517,142,4300,2625,18584,-2421,Median of 3 successful run(s).
+2026-11-05T00:48:56Z,source_snapshot,current,18646,lines,,11517,142,4300,2687,18646,-2483,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:49:04Z,dev_iteration,jac-client-settings-publik-account#1,4.867,seconds,jac build main.jac --client web,11517,142,4300,2687,18646,-2483,One successful command run.
+2026-11-05T00:49:08Z,dev_iteration,jac-client-settings-publik-account#2,4.853,seconds,jac build main.jac --client web,11517,142,4300,2687,18646,-2483,One successful command run.
+2026-11-05T00:49:13Z,dev_iteration,jac-client-settings-publik-account#3,4.810,seconds,jac build main.jac --client web,11517,142,4300,2687,18646,-2483,One successful command run.
+2026-11-05T00:49:13Z,dev_iteration_median,jac-client-settings-publik-account,4.853,seconds,jac build main.jac --client web,11517,142,4300,2687,18646,-2483,Median of 3 successful run(s).
+2026-11-05T00:50:18Z,source_snapshot,current,18647,lines,,11517,142,4300,2688,18647,-2484,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:50:23Z,dev_iteration,jac-client-settings-publik-account-final#1,4.812,seconds,jac build main.jac --client web,11517,142,4300,2688,18647,-2484,One successful command run.
+2026-11-05T00:50:28Z,dev_iteration,jac-client-settings-publik-account-final#2,4.798,seconds,jac build main.jac --client web,11517,142,4300,2688,18647,-2484,One successful command run.
+2026-11-05T00:50:33Z,dev_iteration,jac-client-settings-publik-account-final#3,4.853,seconds,jac build main.jac --client web,11517,142,4300,2688,18647,-2484,One successful command run.
+2026-11-05T00:50:33Z,dev_iteration_median,jac-client-settings-publik-account-final,4.812,seconds,jac build main.jac --client web,11517,142,4300,2688,18647,-2484,Median of 3 successful run(s).
+2026-11-05T00:54:36Z,source_snapshot,current,18460,lines,,11330,142,4300,2688,18460,-2297,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:54:39Z,dev_iteration,rust-check-jac-owned-cleanup-gate-removal#1,2.554,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11330,142,4300,2688,18460,-2297,One successful command run.
+2026-11-05T00:54:40Z,dev_iteration,rust-check-jac-owned-cleanup-gate-removal#2,0.546,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11330,142,4300,2688,18460,-2297,One successful command run.
+2026-11-05T00:54:40Z,dev_iteration,rust-check-jac-owned-cleanup-gate-removal#3,0.179,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11330,142,4300,2688,18460,-2297,One successful command run.
+2026-11-05T00:54:40Z,dev_iteration_median,rust-check-jac-owned-cleanup-gate-removal,0.546,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11330,142,4300,2688,18460,-2297,Median of 3 successful run(s).
+2026-11-05T00:59:00Z,source_snapshot,current,18452,lines,,11263,142,4300,2747,18452,-2289,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T00:59:03Z,dev_iteration,rust-check-jac-dictionary-prefilter#1,2.514,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11263,142,4300,2747,18452,-2289,One successful command run.
+2026-11-05T00:59:03Z,dev_iteration,rust-check-jac-dictionary-prefilter#2,0.640,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11263,142,4300,2747,18452,-2289,One successful command run.
+2026-11-05T00:59:03Z,dev_iteration,rust-check-jac-dictionary-prefilter#3,0.182,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11263,142,4300,2747,18452,-2289,One successful command run.
+2026-11-05T00:59:04Z,dev_iteration_median,rust-check-jac-dictionary-prefilter,0.640,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11263,142,4300,2747,18452,-2289,Median of 3 successful run(s).
+2026-11-05T00:59:40Z,dev_iteration,jac-client-dictionary-prefilter-policy#1,5.083,seconds,jac build main.jac --client web,11263,142,4300,2750,18455,-2292,One successful command run.
+2026-11-05T00:59:45Z,dev_iteration,jac-client-dictionary-prefilter-policy#2,5.242,seconds,jac build main.jac --client web,11263,142,4300,2750,18455,-2292,One successful command run.
+2026-11-05T00:59:50Z,dev_iteration,jac-client-dictionary-prefilter-policy#3,4.823,seconds,jac build main.jac --client web,11263,142,4300,2750,18455,-2292,One successful command run.
+2026-11-05T00:59:50Z,dev_iteration_median,jac-client-dictionary-prefilter-policy,5.083,seconds,jac build main.jac --client web,11263,142,4300,2750,18455,-2292,Median of 3 successful run(s).
+2026-11-05T01:00:02Z,source_snapshot,current,18455,lines,,11263,142,4300,2750,18455,-2292,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:01:09Z,source_snapshot,current,18455,lines,,11263,142,4300,2750,18455,-2292,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:01:15Z,dev_iteration,jac-client-dictionary-prefilter-final#1,5.680,seconds,jac build main.jac --client web,11263,142,4300,2750,18455,-2292,One successful command run.
+2026-11-05T01:01:21Z,dev_iteration,jac-client-dictionary-prefilter-final#2,5.747,seconds,jac build main.jac --client web,11263,142,4300,2750,18455,-2292,One successful command run.
+2026-11-05T01:01:27Z,dev_iteration,jac-client-dictionary-prefilter-final#3,5.691,seconds,jac build main.jac --client web,11263,142,4300,2750,18455,-2292,One successful command run.
+2026-11-05T01:01:27Z,dev_iteration_median,jac-client-dictionary-prefilter-final,5.691,seconds,jac build main.jac --client web,11263,142,4300,2750,18455,-2292,Median of 3 successful run(s).
+2026-11-05T01:07:57Z,source_snapshot,current,18395,lines,,11163,142,4300,2790,18395,-2232,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:08:02Z,dev_iteration,jac-client-dictionary-crud-policy#1,4.949,seconds,jac build main.jac --client web,11163,142,4300,2790,18395,-2232,One successful command run.
+2026-11-05T01:08:07Z,dev_iteration,jac-client-dictionary-crud-policy#2,4.926,seconds,jac build main.jac --client web,11163,142,4300,2790,18395,-2232,One successful command run.
+2026-11-05T01:08:12Z,dev_iteration,jac-client-dictionary-crud-policy#3,4.883,seconds,jac build main.jac --client web,11163,142,4300,2790,18395,-2232,One successful command run.
+2026-11-05T01:08:12Z,dev_iteration_median,jac-client-dictionary-crud-policy,4.926,seconds,jac build main.jac --client web,11163,142,4300,2790,18395,-2232,Median of 3 successful run(s).
+2026-11-05T01:08:16Z,dev_iteration,rust-check-dictionary-storage-adapter#1,0.559,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11163,142,4300,2790,18395,-2232,One successful command run.
+2026-11-05T01:08:17Z,dev_iteration,rust-check-dictionary-storage-adapter#2,0.181,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11163,142,4300,2790,18395,-2232,One successful command run.
+2026-11-05T01:08:17Z,dev_iteration,rust-check-dictionary-storage-adapter#3,0.167,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11163,142,4300,2790,18395,-2232,One successful command run.
+2026-11-05T01:08:17Z,dev_iteration_median,rust-check-dictionary-storage-adapter,0.181,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11163,142,4300,2790,18395,-2232,Median of 3 successful run(s).
+2026-11-05T01:12:23Z,source_snapshot,current,18391,lines,,11129,142,4300,2820,18391,-2228,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:12:35Z,dev_iteration,jac-client-meeting-rolling-merge#1,6.318,seconds,jac build main.jac --client web,11129,142,4300,2820,18391,-2228,One successful command run.
+2026-11-05T01:12:41Z,dev_iteration,jac-client-meeting-rolling-merge#2,5.859,seconds,jac build main.jac --client web,11129,142,4300,2820,18391,-2228,One successful command run.
+2026-11-05T01:12:47Z,dev_iteration,jac-client-meeting-rolling-merge#3,6.116,seconds,jac build main.jac --client web,11129,142,4300,2820,18391,-2228,One successful command run.
+2026-11-05T01:12:47Z,dev_iteration_median,jac-client-meeting-rolling-merge,6.116,seconds,jac build main.jac --client web,11129,142,4300,2820,18391,-2228,Median of 3 successful run(s).
+2026-11-05T01:13:20Z,dev_iteration,rust-check-meeting-rolling-merge#1,1.871,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11129,142,4300,2820,18391,-2228,One successful command run.
+2026-11-05T01:13:21Z,dev_iteration,rust-check-meeting-rolling-merge#2,0.568,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11129,142,4300,2820,18391,-2228,One successful command run.
+2026-11-05T01:13:21Z,dev_iteration,rust-check-meeting-rolling-merge#3,0.178,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11129,142,4300,2820,18391,-2228,One successful command run.
+2026-11-05T01:13:21Z,dev_iteration_median,rust-check-meeting-rolling-merge,0.568,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11129,142,4300,2820,18391,-2228,Median of 3 successful run(s).
+2026-11-05T01:16:25Z,source_snapshot,current,18438,lines,,11120,142,4300,2876,18438,-2275,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:16:34Z,dev_iteration,jac-client-calendar-policy-bridge#1,4.999,seconds,jac build main.jac --client web,11120,142,4300,2876,18438,-2275,One successful command run.
+2026-11-05T01:16:39Z,dev_iteration,jac-client-calendar-policy-bridge#2,5.029,seconds,jac build main.jac --client web,11120,142,4300,2876,18438,-2275,One successful command run.
+2026-11-05T01:16:44Z,dev_iteration,jac-client-calendar-policy-bridge#3,5.052,seconds,jac build main.jac --client web,11120,142,4300,2876,18438,-2275,One successful command run.
+2026-11-05T01:16:44Z,dev_iteration_median,jac-client-calendar-policy-bridge,5.029,seconds,jac build main.jac --client web,11120,142,4300,2876,18438,-2275,Median of 3 successful run(s).
+2026-11-05T01:16:49Z,dev_iteration,rust-check-calendar-policy-bridge#1,0.196,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11120,142,4300,2876,18438,-2275,One successful command run.
+2026-11-05T01:16:49Z,dev_iteration,rust-check-calendar-policy-bridge#2,0.169,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11120,142,4300,2876,18438,-2275,One successful command run.
+2026-11-05T01:16:50Z,dev_iteration,rust-check-calendar-policy-bridge#3,0.170,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11120,142,4300,2876,18438,-2275,One successful command run.
+2026-11-05T01:16:50Z,dev_iteration_median,rust-check-calendar-policy-bridge,0.170,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11120,142,4300,2876,18438,-2275,Median of 3 successful run(s).
+2026-11-05T01:18:13Z,source_snapshot,current,18450,lines,,11116,142,4300,2892,18450,-2287,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:18:22Z,dev_iteration,jac-client-calendar-sync-loop#1,4.978,seconds,jac build main.jac --client web,11116,142,4300,2892,18450,-2287,One successful command run.
+2026-11-05T01:18:27Z,dev_iteration,jac-client-calendar-sync-loop#2,4.978,seconds,jac build main.jac --client web,11116,142,4300,2892,18450,-2287,One successful command run.
+2026-11-05T01:18:32Z,dev_iteration,jac-client-calendar-sync-loop#3,4.974,seconds,jac build main.jac --client web,11116,142,4300,2892,18450,-2287,One successful command run.
+2026-11-05T01:18:32Z,dev_iteration_median,jac-client-calendar-sync-loop,4.978,seconds,jac build main.jac --client web,11116,142,4300,2892,18450,-2287,Median of 3 successful run(s).
+2026-11-05T01:18:36Z,dev_iteration,rust-check-calendar-sync-loop#1,1.108,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11116,142,4300,2892,18450,-2287,One successful command run.
+2026-11-05T01:18:37Z,dev_iteration,rust-check-calendar-sync-loop#2,0.178,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11116,142,4300,2892,18450,-2287,One successful command run.
+2026-11-05T01:18:37Z,dev_iteration,rust-check-calendar-sync-loop#3,0.169,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11116,142,4300,2892,18450,-2287,One successful command run.
+2026-11-05T01:18:37Z,dev_iteration_median,rust-check-calendar-sync-loop,0.178,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11116,142,4300,2892,18450,-2287,Median of 3 successful run(s).
+2026-11-05T01:24:32Z,source_snapshot,current,14160,lines,,11113,142,0,2905,14160,2003,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:24:43Z,dev_iteration,jac-client-after-react-removal#1,5.802,seconds,jac build main.jac --client web,11113,142,0,2905,14160,2003,One successful command run.
+2026-11-05T01:24:48Z,dev_iteration,jac-client-after-react-removal#2,5.510,seconds,jac build main.jac --client web,11113,142,0,2905,14160,2003,One successful command run.
+2026-11-05T01:24:54Z,dev_iteration,jac-client-after-react-removal#3,5.505,seconds,jac build main.jac --client web,11113,142,0,2905,14160,2003,One successful command run.
+2026-11-05T01:24:54Z,dev_iteration_median,jac-client-after-react-removal,5.510,seconds,jac build main.jac --client web,11113,142,0,2905,14160,2003,Median of 3 successful run(s).
+2026-11-05T01:25:56Z,dev_iteration,rust-check-after-react-removal#1,1.885,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11113,142,0,2905,14160,2003,One successful command run.
+2026-11-05T01:25:56Z,dev_iteration,rust-check-after-react-removal#2,0.264,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11113,142,0,2905,14160,2003,One successful command run.
+2026-11-05T01:25:57Z,dev_iteration,rust-check-after-react-removal#3,0.229,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11113,142,0,2905,14160,2003,One successful command run.
+2026-11-05T01:25:57Z,dev_iteration_median,rust-check-after-react-removal,0.264,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11113,142,0,2905,14160,2003,Median of 3 successful run(s).
+2026-11-05T01:32:50Z,source_snapshot,current,13946,lines,,10881,142,0,2923,13946,2217,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:33:01Z,dev_iteration,jac-client-stats-history-policy#1,5.075,seconds,jac build main.jac --client web,10881,142,0,2923,13946,2217,One successful command run.
+2026-11-05T01:33:06Z,dev_iteration,jac-client-stats-history-policy#2,5.038,seconds,jac build main.jac --client web,10881,142,0,2923,13946,2217,One successful command run.
+2026-11-05T01:33:11Z,dev_iteration,jac-client-stats-history-policy#3,5.048,seconds,jac build main.jac --client web,10881,142,0,2923,13946,2217,One successful command run.
+2026-11-05T01:33:11Z,dev_iteration_median,jac-client-stats-history-policy,5.048,seconds,jac build main.jac --client web,10881,142,0,2923,13946,2217,Median of 3 successful run(s).
+2026-11-05T01:33:22Z,dev_iteration,rust-check-stats-history-policy#1,1.460,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10881,142,0,2923,13946,2217,One successful command run.
+2026-11-05T01:33:22Z,dev_iteration,rust-check-stats-history-policy#2,0.179,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10881,142,0,2923,13946,2217,One successful command run.
+2026-11-05T01:33:22Z,dev_iteration,rust-check-stats-history-policy#3,0.168,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10881,142,0,2923,13946,2217,One successful command run.
+2026-11-05T01:33:22Z,dev_iteration_median,rust-check-stats-history-policy,0.179,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10881,142,0,2923,13946,2217,Median of 3 successful run(s).
+2026-11-05T01:39:46Z,dev_iteration,jac-client-windows-linux-dictation#1,5.153,seconds,jac build main.jac --client web,11050,142,0,2923,14115,2048,One successful command run.
+2026-11-05T01:39:51Z,dev_iteration,jac-client-windows-linux-dictation#2,5.012,seconds,jac build main.jac --client web,11050,142,0,2923,14115,2048,One successful command run.
+2026-11-05T01:39:56Z,dev_iteration,jac-client-windows-linux-dictation#3,5.007,seconds,jac build main.jac --client web,11050,142,0,2923,14115,2048,One successful command run.
+2026-11-05T01:39:56Z,dev_iteration_median,jac-client-windows-linux-dictation,5.012,seconds,jac build main.jac --client web,11050,142,0,2923,14115,2048,Median of 3 successful run(s).
+2026-11-05T01:40:01Z,dev_iteration,rust-check-cross-platform-dictation#1,0.424,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11050,142,0,2923,14115,2048,One successful command run.
+2026-11-05T01:40:01Z,dev_iteration,rust-check-cross-platform-dictation#2,0.170,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11050,142,0,2923,14115,2048,One successful command run.
+2026-11-05T01:40:01Z,dev_iteration,rust-check-cross-platform-dictation#3,0.171,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11050,142,0,2923,14115,2048,One successful command run.
+2026-11-05T01:40:01Z,dev_iteration_median,rust-check-cross-platform-dictation,0.171,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11050,142,0,2923,14115,2048,Median of 3 successful run(s).
+2026-11-05T01:40:05Z,source_snapshot,current,14115,lines,,11050,142,0,2923,14115,2048,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:41:31Z,dev_iteration,jac-client-windows-linux-dictation-final#1,5.724,seconds,jac build main.jac --client web,11050,142,0,2925,14117,2046,One successful command run.
+2026-11-05T01:41:36Z,dev_iteration,jac-client-windows-linux-dictation-final#2,5.104,seconds,jac build main.jac --client web,11050,142,0,2925,14117,2046,One successful command run.
+2026-11-05T01:41:42Z,dev_iteration,jac-client-windows-linux-dictation-final#3,5.370,seconds,jac build main.jac --client web,11050,142,0,2925,14117,2046,One successful command run.
+2026-11-05T01:41:42Z,dev_iteration_median,jac-client-windows-linux-dictation-final,5.370,seconds,jac build main.jac --client web,11050,142,0,2925,14117,2046,Median of 3 successful run(s).
+2026-11-05T01:41:45Z,source_snapshot,current,14117,lines,,11050,142,0,2925,14117,2046,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:45:59Z,dev_iteration,jac-client-dictation-record-policy#1,5.054,seconds,jac build main.jac --client web,11127,142,0,2970,14239,1924,One successful command run.
+2026-11-05T01:46:04Z,dev_iteration,jac-client-dictation-record-policy#2,5.076,seconds,jac build main.jac --client web,11127,142,0,2970,14239,1924,One successful command run.
+2026-11-05T01:46:09Z,dev_iteration,jac-client-dictation-record-policy#3,5.129,seconds,jac build main.jac --client web,11127,142,0,2970,14239,1924,One successful command run.
+2026-11-05T01:46:09Z,dev_iteration_median,jac-client-dictation-record-policy,5.076,seconds,jac build main.jac --client web,11127,142,0,2970,14239,1924,Median of 3 successful run(s).
+2026-11-05T01:46:14Z,dev_iteration,rust-check-jac-dictation-record-policy#1,1.217,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11127,142,0,2970,14239,1924,One successful command run.
+2026-11-05T01:46:14Z,dev_iteration,rust-check-jac-dictation-record-policy#2,0.177,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11127,142,0,2970,14239,1924,One successful command run.
+2026-11-05T01:46:14Z,dev_iteration,rust-check-jac-dictation-record-policy#3,0.167,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11127,142,0,2970,14239,1924,One successful command run.
+2026-11-05T01:46:14Z,dev_iteration_median,rust-check-jac-dictation-record-policy,0.177,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11127,142,0,2970,14239,1924,Median of 3 successful run(s).
+2026-11-05T01:46:17Z,source_snapshot,current,14239,lines,,11127,142,0,2970,14239,1924,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:48:03Z,dev_iteration,rust-check-jac-dictation-record-final#1,1.449,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11115,142,0,2970,14227,1936,One successful command run.
+2026-11-05T01:48:04Z,dev_iteration,rust-check-jac-dictation-record-final#2,0.178,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11115,142,0,2970,14227,1936,One successful command run.
+2026-11-05T01:48:04Z,dev_iteration,rust-check-jac-dictation-record-final#3,0.167,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11115,142,0,2970,14227,1936,One successful command run.
+2026-11-05T01:48:04Z,dev_iteration_median,rust-check-jac-dictation-record-final,0.178,seconds,cargo check --manifest-path src-tauri/Cargo.toml,11115,142,0,2970,14227,1936,Median of 3 successful run(s).
+2026-11-05T01:48:07Z,source_snapshot,current,14227,lines,,11115,142,0,2970,14227,1936,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T01:54:19Z,dev_iteration,jac-client-jac-dictation-reducer#1,5.314,seconds,jac build main.jac --client web,10708,142,0,2970,13820,2343,One successful command run.
+2026-11-05T01:54:24Z,dev_iteration,jac-client-jac-dictation-reducer#2,5.086,seconds,jac build main.jac --client web,10708,142,0,2970,13820,2343,One successful command run.
+2026-11-05T01:54:29Z,dev_iteration,jac-client-jac-dictation-reducer#3,5.035,seconds,jac build main.jac --client web,10708,142,0,2970,13820,2343,One successful command run.
+2026-11-05T01:54:29Z,dev_iteration_median,jac-client-jac-dictation-reducer,5.086,seconds,jac build main.jac --client web,10708,142,0,2970,13820,2343,Median of 3 successful run(s).
+2026-11-05T01:54:33Z,dev_iteration,rust-check-jac-dictation-reducer#1,0.449,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10708,142,0,2970,13820,2343,One successful command run.
+2026-11-05T01:54:33Z,dev_iteration,rust-check-jac-dictation-reducer#2,0.169,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10708,142,0,2970,13820,2343,One successful command run.
+2026-11-05T01:54:33Z,dev_iteration,rust-check-jac-dictation-reducer#3,0.169,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10708,142,0,2970,13820,2343,One successful command run.
+2026-11-05T01:54:33Z,dev_iteration_median,rust-check-jac-dictation-reducer,0.169,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10708,142,0,2970,13820,2343,Median of 3 successful run(s).
+2026-11-05T01:54:37Z,source_snapshot,current,13820,lines,,10708,142,0,2970,13820,2343,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:01:45Z,dev_iteration,jac-client-jac-sound-preference#1,5.225,seconds,jac build main.jac --client web,10704,142,0,2976,13822,2341,One successful command run.
+2026-11-05T02:01:51Z,dev_iteration,jac-client-jac-sound-preference#2,5.533,seconds,jac build main.jac --client web,10704,142,0,2976,13822,2341,One successful command run.
+2026-11-05T02:01:56Z,dev_iteration,jac-client-jac-sound-preference#3,5.198,seconds,jac build main.jac --client web,10704,142,0,2976,13822,2341,One successful command run.
+2026-11-05T02:01:56Z,dev_iteration_median,jac-client-jac-sound-preference,5.225,seconds,jac build main.jac --client web,10704,142,0,2976,13822,2341,Median of 3 successful run(s).
+2026-11-05T02:02:01Z,dev_iteration,rust-check-jac-sound-preference#1,0.436,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10704,142,0,2976,13822,2341,One successful command run.
+2026-11-05T02:02:01Z,dev_iteration,rust-check-jac-sound-preference#2,0.171,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10704,142,0,2976,13822,2341,One successful command run.
+2026-11-05T02:02:01Z,dev_iteration,rust-check-jac-sound-preference#3,0.171,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10704,142,0,2976,13822,2341,One successful command run.
+2026-11-05T02:02:01Z,dev_iteration_median,rust-check-jac-sound-preference,0.171,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10704,142,0,2976,13822,2341,Median of 3 successful run(s).
+2026-11-05T02:02:05Z,source_snapshot,current,13822,lines,,10704,142,0,2976,13822,2341,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:07:39Z,dev_iteration,jac-client-publik-display-policy#1,5.091,seconds,jac build main.jac --client web,10713,142,0,3000,13855,2308,One successful command run.
+2026-11-05T02:07:44Z,dev_iteration,jac-client-publik-display-policy#2,5.073,seconds,jac build main.jac --client web,10713,142,0,3000,13855,2308,One successful command run.
+2026-11-05T02:07:49Z,dev_iteration,jac-client-publik-display-policy#3,5.088,seconds,jac build main.jac --client web,10713,142,0,3000,13855,2308,One successful command run.
+2026-11-05T02:07:49Z,dev_iteration_median,jac-client-publik-display-policy,5.088,seconds,jac build main.jac --client web,10713,142,0,3000,13855,2308,Median of 3 successful run(s).
+2026-11-05T02:07:53Z,dev_iteration,rust-check-publik-display-policy#1,0.437,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10713,142,0,3000,13855,2308,One successful command run.
+2026-11-05T02:07:53Z,dev_iteration,rust-check-publik-display-policy#2,0.167,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10713,142,0,3000,13855,2308,One successful command run.
+2026-11-05T02:07:53Z,dev_iteration,rust-check-publik-display-policy#3,0.165,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10713,142,0,3000,13855,2308,One successful command run.
+2026-11-05T02:07:53Z,dev_iteration_median,rust-check-publik-display-policy,0.167,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10713,142,0,3000,13855,2308,Median of 3 successful run(s).
+2026-11-05T02:08:01Z,source_snapshot,current,13855,lines,,10713,142,0,3000,13855,2308,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:09:10Z,dev_iteration,rust-check-publik-display-policy-final#1,0.181,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10681,142,0,3000,13823,2340,One successful command run.
+2026-11-05T02:09:10Z,dev_iteration,rust-check-publik-display-policy-final#2,0.174,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10681,142,0,3000,13823,2340,One successful command run.
+2026-11-05T02:09:10Z,dev_iteration,rust-check-publik-display-policy-final#3,0.170,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10681,142,0,3000,13823,2340,One successful command run.
+2026-11-05T02:09:10Z,dev_iteration_median,rust-check-publik-display-policy-final,0.174,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10681,142,0,3000,13823,2340,Median of 3 successful run(s).
+2026-11-05T02:09:13Z,source_snapshot,current,13823,lines,,10681,142,0,3000,13823,2340,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:15:02Z,dev_iteration,jac-client-overlay-placement#1,5.109,seconds,jac build main.jac --client web,10516,142,0,3037,13695,2468,One successful command run.
+2026-11-05T02:15:07Z,dev_iteration,jac-client-overlay-placement#2,5.065,seconds,jac build main.jac --client web,10516,142,0,3037,13695,2468,One successful command run.
+2026-11-05T02:15:12Z,dev_iteration,jac-client-overlay-placement#3,5.102,seconds,jac build main.jac --client web,10516,142,0,3037,13695,2468,One successful command run.
+2026-11-05T02:15:12Z,dev_iteration_median,jac-client-overlay-placement,5.102,seconds,jac build main.jac --client web,10516,142,0,3037,13695,2468,Median of 3 successful run(s).
+2026-11-05T02:15:16Z,dev_iteration,rust-check-overlay-placement#1,0.187,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10516,142,0,3037,13695,2468,One successful command run.
+2026-11-05T02:15:16Z,dev_iteration,rust-check-overlay-placement#2,0.169,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10516,142,0,3037,13695,2468,One successful command run.
+2026-11-05T02:15:16Z,dev_iteration,rust-check-overlay-placement#3,0.169,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10516,142,0,3037,13695,2468,One successful command run.
+2026-11-05T02:15:16Z,dev_iteration_median,rust-check-overlay-placement,0.169,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10516,142,0,3037,13695,2468,Median of 3 successful run(s).
+2026-11-05T02:15:17Z,source_snapshot,current,13695,lines,,10516,142,0,3037,13695,2468,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:18:27Z,dev_iteration,jac-client-jac-permission-copy#1,5.849,seconds,jac build main.jac --client web,10455,142,0,3055,13652,2511,One successful command run.
+2026-11-05T02:18:32Z,dev_iteration,jac-client-jac-permission-copy#2,5.637,seconds,jac build main.jac --client web,10455,142,0,3055,13652,2511,One successful command run.
+2026-11-05T02:18:38Z,dev_iteration,jac-client-jac-permission-copy#3,5.636,seconds,jac build main.jac --client web,10455,142,0,3055,13652,2511,One successful command run.
+2026-11-05T02:18:38Z,dev_iteration_median,jac-client-jac-permission-copy,5.637,seconds,jac build main.jac --client web,10455,142,0,3055,13652,2511,Median of 3 successful run(s).
+2026-11-05T02:18:42Z,dev_iteration,rust-check-jac-permission-copy#1,0.425,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10455,142,0,3055,13652,2511,One successful command run.
+2026-11-05T02:18:42Z,dev_iteration,rust-check-jac-permission-copy#2,0.175,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10455,142,0,3055,13652,2511,One successful command run.
+2026-11-05T02:18:43Z,dev_iteration,rust-check-jac-permission-copy#3,0.177,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10455,142,0,3055,13652,2511,One successful command run.
+2026-11-05T02:18:43Z,dev_iteration_median,rust-check-jac-permission-copy,0.177,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10455,142,0,3055,13652,2511,Median of 3 successful run(s).
+2026-11-05T02:18:43Z,source_snapshot,current,13652,lines,,10455,142,0,3055,13652,2511,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:21:06Z,dev_iteration,jac-client-jac-stats-single-owner#1,5.104,seconds,jac build main.jac --client web,10440,142,0,3055,13637,2526,One successful command run.
+2026-11-05T02:21:11Z,dev_iteration,jac-client-jac-stats-single-owner#2,5.111,seconds,jac build main.jac --client web,10440,142,0,3055,13637,2526,One successful command run.
+2026-11-05T02:21:16Z,dev_iteration,jac-client-jac-stats-single-owner#3,5.171,seconds,jac build main.jac --client web,10440,142,0,3055,13637,2526,One successful command run.
+2026-11-05T02:21:16Z,dev_iteration_median,jac-client-jac-stats-single-owner,5.111,seconds,jac build main.jac --client web,10440,142,0,3055,13637,2526,Median of 3 successful run(s).
+2026-11-05T02:21:20Z,dev_iteration,rust-check-jac-stats-single-owner#1,0.185,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10440,142,0,3055,13637,2526,One successful command run.
+2026-11-05T02:21:20Z,dev_iteration,rust-check-jac-stats-single-owner#2,0.171,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10440,142,0,3055,13637,2526,One successful command run.
+2026-11-05T02:21:20Z,dev_iteration,rust-check-jac-stats-single-owner#3,0.170,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10440,142,0,3055,13637,2526,One successful command run.
+2026-11-05T02:21:20Z,dev_iteration_median,rust-check-jac-stats-single-owner,0.171,seconds,cargo check --manifest-path src-tauri/Cargo.toml,10440,142,0,3055,13637,2526,Median of 3 successful run(s).
+2026-11-05T02:21:21Z,source_snapshot,current,13637,lines,,10440,142,0,3055,13637,2526,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:28:48Z,dev_iteration,jac-client-retire-rust-cleanup-policy#1,5.938,seconds,jac build main.jac --client web,9677,142,0,3055,12874,3289,One successful command run.
+2026-11-05T02:28:54Z,dev_iteration,jac-client-retire-rust-cleanup-policy#2,5.676,seconds,jac build main.jac --client web,9677,142,0,3055,12874,3289,One successful command run.
+2026-11-05T02:28:59Z,dev_iteration,jac-client-retire-rust-cleanup-policy#3,5.414,seconds,jac build main.jac --client web,9677,142,0,3055,12874,3289,One successful command run.
+2026-11-05T02:28:59Z,dev_iteration_median,jac-client-retire-rust-cleanup-policy,5.676,seconds,jac build main.jac --client web,9677,142,0,3055,12874,3289,Median of 3 successful run(s).
+2026-11-05T02:29:05Z,dev_iteration,rust-check-retire-rust-cleanup-policy#1,1.322,seconds,cargo check --workspace,9677,142,0,3055,12874,3289,One successful command run.
+2026-11-05T02:29:05Z,dev_iteration,rust-check-retire-rust-cleanup-policy#2,0.185,seconds,cargo check --workspace,9677,142,0,3055,12874,3289,One successful command run.
+2026-11-05T02:29:05Z,dev_iteration,rust-check-retire-rust-cleanup-policy#3,0.170,seconds,cargo check --workspace,9677,142,0,3055,12874,3289,One successful command run.
+2026-11-05T02:29:05Z,dev_iteration_median,rust-check-retire-rust-cleanup-policy,0.185,seconds,cargo check --workspace,9677,142,0,3055,12874,3289,Median of 3 successful run(s).
+2026-11-05T02:29:06Z,source_snapshot,current,12874,lines,,9677,142,0,3055,12874,3289,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:30:19Z,dev_iteration,jac-client-cleanup-policy-retirement-final#1,5.134,seconds,jac build main.jac --client web,9636,142,0,3055,12833,3330,One successful command run.
+2026-11-05T02:30:24Z,dev_iteration,jac-client-cleanup-policy-retirement-final#2,5.122,seconds,jac build main.jac --client web,9636,142,0,3055,12833,3330,One successful command run.
+2026-11-05T02:30:30Z,dev_iteration,jac-client-cleanup-policy-retirement-final#3,5.482,seconds,jac build main.jac --client web,9636,142,0,3055,12833,3330,One successful command run.
+2026-11-05T02:30:30Z,dev_iteration_median,jac-client-cleanup-policy-retirement-final,5.134,seconds,jac build main.jac --client web,9636,142,0,3055,12833,3330,Median of 3 successful run(s).
+2026-11-05T02:30:36Z,dev_iteration,rust-check-cleanup-policy-retirement-final#1,1.455,seconds,cargo check --workspace,9636,142,0,3055,12833,3330,One successful command run.
+2026-11-05T02:30:36Z,dev_iteration,rust-check-cleanup-policy-retirement-final#2,0.191,seconds,cargo check --workspace,9636,142,0,3055,12833,3330,One successful command run.
+2026-11-05T02:30:36Z,dev_iteration,rust-check-cleanup-policy-retirement-final#3,0.179,seconds,cargo check --workspace,9636,142,0,3055,12833,3330,One successful command run.
+2026-11-05T02:30:36Z,dev_iteration_median,rust-check-cleanup-policy-retirement-final,0.191,seconds,cargo check --workspace,9636,142,0,3055,12833,3330,Median of 3 successful run(s).
+2026-11-05T02:30:37Z,source_snapshot,current,12833,lines,,9636,142,0,3055,12833,3330,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:34:41Z,source_snapshot,current,12941,lines,,9702,142,0,3097,12941,3222,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:34:47Z,dev_iteration,jac-client-audio-quality-policy#1,5.624,seconds,jac build main.jac --client web,9702,142,0,3097,12941,3222,One successful command run.
+2026-11-05T02:34:53Z,dev_iteration,jac-client-audio-quality-policy#2,5.572,seconds,jac build main.jac --client web,9702,142,0,3097,12941,3222,One successful command run.
+2026-11-05T02:34:58Z,dev_iteration,jac-client-audio-quality-policy#3,5.591,seconds,jac build main.jac --client web,9702,142,0,3097,12941,3222,One successful command run.
+2026-11-05T02:34:58Z,dev_iteration_median,jac-client-audio-quality-policy,5.591,seconds,jac build main.jac --client web,9702,142,0,3097,12941,3222,Median of 3 successful run(s).
+2026-11-05T02:34:59Z,dev_iteration,rust-check-audio-quality-policy#1,0.482,seconds,cargo check --workspace,9702,142,0,3097,12941,3222,One successful command run.
+2026-11-05T02:34:59Z,dev_iteration,rust-check-audio-quality-policy#2,0.203,seconds,cargo check --workspace,9702,142,0,3097,12941,3222,One successful command run.
+2026-11-05T02:35:00Z,dev_iteration,rust-check-audio-quality-policy#3,0.199,seconds,cargo check --workspace,9702,142,0,3097,12941,3222,One successful command run.
+2026-11-05T02:35:00Z,dev_iteration_median,rust-check-audio-quality-policy,0.203,seconds,cargo check --workspace,9702,142,0,3097,12941,3222,Median of 3 successful run(s).
+2026-11-05T02:49:43Z,source_snapshot,current,12778,lines,,9496,142,0,3140,12778,3385,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:49:59Z,dev_iteration,jac-client-publik-viewmodel#1,5.627,seconds,jac build main.jac --client web,9496,142,0,3140,12778,3385,One successful command run.
+2026-11-05T02:50:04Z,dev_iteration,jac-client-publik-viewmodel#2,5.172,seconds,jac build main.jac --client web,9496,142,0,3140,12778,3385,One successful command run.
+2026-11-05T02:50:10Z,dev_iteration,jac-client-publik-viewmodel#3,5.201,seconds,jac build main.jac --client web,9496,142,0,3140,12778,3385,One successful command run.
+2026-11-05T02:50:10Z,dev_iteration_median,jac-client-publik-viewmodel,5.201,seconds,jac build main.jac --client web,9496,142,0,3140,12778,3385,Median of 3 successful run(s).
+2026-11-05T02:50:12Z,dev_iteration,rust-test-check-publik-viewmodel#1,1.538,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,9496,142,0,3140,12778,3385,One successful command run.
+2026-11-05T02:50:12Z,dev_iteration,rust-test-check-publik-viewmodel#2,0.190,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,9496,142,0,3140,12778,3385,One successful command run.
+2026-11-05T02:50:12Z,dev_iteration,rust-test-check-publik-viewmodel#3,0.179,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,9496,142,0,3140,12778,3385,One successful command run.
+2026-11-05T02:50:12Z,dev_iteration_median,rust-test-check-publik-viewmodel,0.190,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,9496,142,0,3140,12778,3385,Median of 3 successful run(s).
+2026-11-05T02:55:41Z,source_snapshot,current,12343,lines,,9061,142,0,3140,12343,3820,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:55:46Z,dev_iteration,rust-check-retire-legacy-ipc#1,1.782,seconds,cargo check --workspace,9061,142,0,3140,12343,3820,One successful command run.
+2026-11-05T02:55:46Z,dev_iteration,rust-check-retire-legacy-ipc#2,0.195,seconds,cargo check --workspace,9061,142,0,3140,12343,3820,One successful command run.
+2026-11-05T02:55:47Z,dev_iteration,rust-check-retire-legacy-ipc#3,0.191,seconds,cargo check --workspace,9061,142,0,3140,12343,3820,One successful command run.
+2026-11-05T02:55:47Z,dev_iteration_median,rust-check-retire-legacy-ipc,0.195,seconds,cargo check --workspace,9061,142,0,3140,12343,3820,Median of 3 successful run(s).
+2026-11-05T02:58:22Z,source_snapshot,current,12328,lines,,9046,142,0,3140,12328,3835,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T02:58:28Z,dev_iteration,jac-client-meeting-json-validation#1,5.202,seconds,jac build main.jac --client web,9046,142,0,3140,12328,3835,One successful command run.
+2026-11-05T02:58:33Z,dev_iteration,jac-client-meeting-json-validation#2,5.158,seconds,jac build main.jac --client web,9046,142,0,3140,12328,3835,One successful command run.
+2026-11-05T02:58:38Z,dev_iteration,jac-client-meeting-json-validation#3,5.166,seconds,jac build main.jac --client web,9046,142,0,3140,12328,3835,One successful command run.
+2026-11-05T02:58:38Z,dev_iteration_median,jac-client-meeting-json-validation,5.166,seconds,jac build main.jac --client web,9046,142,0,3140,12328,3835,Median of 3 successful run(s).
+2026-11-05T02:58:39Z,dev_iteration,rust-check-meeting-json-validation#1,0.433,seconds,cargo check --workspace,9046,142,0,3140,12328,3835,One successful command run.
+2026-11-05T02:58:39Z,dev_iteration,rust-check-meeting-json-validation#2,0.170,seconds,cargo check --workspace,9046,142,0,3140,12328,3835,One successful command run.
+2026-11-05T02:58:40Z,dev_iteration,rust-check-meeting-json-validation#3,0.171,seconds,cargo check --workspace,9046,142,0,3140,12328,3835,One successful command run.
+2026-11-05T02:58:40Z,dev_iteration_median,rust-check-meeting-json-validation,0.171,seconds,cargo check --workspace,9046,142,0,3140,12328,3835,Median of 3 successful run(s).
+2026-11-05T03:02:17Z,source_snapshot,current,12414,lines,,9100,142,0,3172,12414,3749,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:02:23Z,dev_iteration,jac-client-meeting-input-policy#1,5.511,seconds,jac build main.jac --client web,9100,142,0,3172,12414,3749,One successful command run.
+2026-11-05T03:02:28Z,dev_iteration,jac-client-meeting-input-policy#2,5.154,seconds,jac build main.jac --client web,9100,142,0,3172,12414,3749,One successful command run.
+2026-11-05T03:02:33Z,dev_iteration,jac-client-meeting-input-policy#3,5.225,seconds,jac build main.jac --client web,9100,142,0,3172,12414,3749,One successful command run.
+2026-11-05T03:02:33Z,dev_iteration_median,jac-client-meeting-input-policy,5.225,seconds,jac build main.jac --client web,9100,142,0,3172,12414,3749,Median of 3 successful run(s).
+2026-11-05T03:02:34Z,dev_iteration,rust-test-check-meeting-input-policy#1,0.438,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,9100,142,0,3172,12414,3749,One successful command run.
+2026-11-05T03:02:34Z,dev_iteration,rust-test-check-meeting-input-policy#2,0.170,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,9100,142,0,3172,12414,3749,One successful command run.
+2026-11-05T03:02:34Z,dev_iteration,rust-test-check-meeting-input-policy#3,0.173,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,9100,142,0,3172,12414,3749,One successful command run.
+2026-11-05T03:02:34Z,dev_iteration_median,rust-test-check-meeting-input-policy,0.173,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,9100,142,0,3172,12414,3749,Median of 3 successful run(s).
+2026-11-05T03:11:13Z,source_snapshot,current,12343,lines,,8986,142,0,3215,12343,3820,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:11:19Z,dev_iteration,jac-client-publik-low-balance-policy#1,5.384,seconds,jac build main.jac --client web,8986,142,0,3215,12343,3820,One successful command run.
+2026-11-05T03:11:25Z,dev_iteration,jac-client-publik-low-balance-policy#2,5.238,seconds,jac build main.jac --client web,8986,142,0,3215,12343,3820,One successful command run.
+2026-11-05T03:11:30Z,dev_iteration,jac-client-publik-low-balance-policy#3,5.241,seconds,jac build main.jac --client web,8986,142,0,3215,12343,3820,One successful command run.
+2026-11-05T03:11:30Z,dev_iteration_median,jac-client-publik-low-balance-policy,5.241,seconds,jac build main.jac --client web,8986,142,0,3215,12343,3820,Median of 3 successful run(s).
+2026-11-05T03:11:31Z,dev_iteration,rust-test-check-publik-low-balance-policy#1,0.443,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8986,142,0,3215,12343,3820,One successful command run.
+2026-11-05T03:11:31Z,dev_iteration,rust-test-check-publik-low-balance-policy#2,0.172,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8986,142,0,3215,12343,3820,One successful command run.
+2026-11-05T03:11:31Z,dev_iteration,rust-test-check-publik-low-balance-policy#3,0.170,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8986,142,0,3215,12343,3820,One successful command run.
+2026-11-05T03:11:31Z,dev_iteration_median,rust-test-check-publik-low-balance-policy,0.172,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8986,142,0,3215,12343,3820,Median of 3 successful run(s).
+2026-11-05T03:13:01Z,source_snapshot,current,12348,lines,,8991,142,0,3215,12348,3815,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:13:07Z,dev_iteration,jac-client-publik-low-balance-policy-final#1,5.987,seconds,jac build main.jac --client web,8991,142,0,3215,12348,3815,One successful command run.
+2026-11-05T03:13:13Z,dev_iteration,jac-client-publik-low-balance-policy-final#2,5.788,seconds,jac build main.jac --client web,8991,142,0,3215,12348,3815,One successful command run.
+2026-11-05T03:13:19Z,dev_iteration,jac-client-publik-low-balance-policy-final#3,5.791,seconds,jac build main.jac --client web,8991,142,0,3215,12348,3815,One successful command run.
+2026-11-05T03:13:19Z,dev_iteration_median,jac-client-publik-low-balance-policy-final,5.791,seconds,jac build main.jac --client web,8991,142,0,3215,12348,3815,Median of 3 successful run(s).
+2026-11-05T03:13:22Z,dev_iteration,rust-test-check-publik-low-balance-policy-final#1,1.947,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8991,142,0,3215,12348,3815,One successful command run.
+2026-11-05T03:13:22Z,dev_iteration,rust-test-check-publik-low-balance-policy-final#2,0.699,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8991,142,0,3215,12348,3815,One successful command run.
+2026-11-05T03:13:23Z,dev_iteration,rust-test-check-publik-low-balance-policy-final#3,0.204,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8991,142,0,3215,12348,3815,One successful command run.
+2026-11-05T03:13:23Z,dev_iteration_median,rust-test-check-publik-low-balance-policy-final,0.699,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8991,142,0,3215,12348,3815,Median of 3 successful run(s).
+2026-11-05T03:14:42Z,source_snapshot,current,12337,lines,,8980,142,0,3215,12337,3826,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:14:55Z,dev_iteration,jac-client-publik-policy-current#1,6.356,seconds,jac build main.jac --client web,8980,142,0,3215,12337,3826,One successful command run.
+2026-11-05T03:15:00Z,dev_iteration,jac-client-publik-policy-current#2,5.251,seconds,jac build main.jac --client web,8980,142,0,3215,12337,3826,One successful command run.
+2026-11-05T03:15:06Z,dev_iteration,jac-client-publik-policy-current#3,5.235,seconds,jac build main.jac --client web,8980,142,0,3215,12337,3826,One successful command run.
+2026-11-05T03:15:06Z,dev_iteration_median,jac-client-publik-policy-current,5.251,seconds,jac build main.jac --client web,8980,142,0,3215,12337,3826,Median of 3 successful run(s).
+2026-11-05T03:15:07Z,dev_iteration,rust-test-check-publik-policy-current#1,0.432,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8980,142,0,3215,12337,3826,One successful command run.
+2026-11-05T03:15:07Z,dev_iteration,rust-test-check-publik-policy-current#2,0.166,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8980,142,0,3215,12337,3826,One successful command run.
+2026-11-05T03:15:07Z,dev_iteration,rust-test-check-publik-policy-current#3,0.168,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8980,142,0,3215,12337,3826,One successful command run.
+2026-11-05T03:15:07Z,dev_iteration_median,rust-test-check-publik-policy-current,0.168,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8980,142,0,3215,12337,3826,Median of 3 successful run(s).
+2026-11-05T03:18:54Z,source_snapshot,current,12232,lines,,8871,142,0,3219,12232,3931,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:19:00Z,dev_iteration,jac-client-publik-exhausted-notice-jac#1,5.637,seconds,jac build main.jac --client web,8871,142,0,3219,12232,3931,One successful command run.
+2026-11-05T03:19:05Z,dev_iteration,jac-client-publik-exhausted-notice-jac#2,5.328,seconds,jac build main.jac --client web,8871,142,0,3219,12232,3931,One successful command run.
+2026-11-05T03:19:10Z,dev_iteration,jac-client-publik-exhausted-notice-jac#3,5.282,seconds,jac build main.jac --client web,8871,142,0,3219,12232,3931,One successful command run.
+2026-11-05T03:19:10Z,dev_iteration_median,jac-client-publik-exhausted-notice-jac,5.328,seconds,jac build main.jac --client web,8871,142,0,3219,12232,3931,Median of 3 successful run(s).
+2026-11-05T03:19:11Z,dev_iteration,rust-test-check-publik-exhausted-notice-jac#1,0.443,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8871,142,0,3219,12232,3931,One successful command run.
+2026-11-05T03:19:12Z,dev_iteration,rust-test-check-publik-exhausted-notice-jac#2,0.169,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8871,142,0,3219,12232,3931,One successful command run.
+2026-11-05T03:19:12Z,dev_iteration,rust-test-check-publik-exhausted-notice-jac#3,0.168,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8871,142,0,3219,12232,3931,One successful command run.
+2026-11-05T03:19:12Z,dev_iteration_median,rust-test-check-publik-exhausted-notice-jac,0.169,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8871,142,0,3219,12232,3931,Median of 3 successful run(s).
+2026-11-05T03:24:51Z,source_snapshot,current,12272,lines,,8878,142,0,3252,12272,3891,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:25:01Z,dev_iteration,rust-test-check-publik-provision-errors-jac#1,0.581,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8878,142,0,3252,12272,3891,One successful command run.
+2026-11-05T03:25:01Z,dev_iteration,rust-test-check-publik-provision-errors-jac#2,0.210,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8878,142,0,3252,12272,3891,One successful command run.
+2026-11-05T03:25:01Z,dev_iteration,rust-test-check-publik-provision-errors-jac#3,0.196,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8878,142,0,3252,12272,3891,One successful command run.
+2026-11-05T03:25:01Z,dev_iteration_median,rust-test-check-publik-provision-errors-jac,0.210,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8878,142,0,3252,12272,3891,Median of 3 successful run(s).
+2026-11-05T03:25:06Z,dev_iteration,jac-client-publik-provision-errors-jac#1,6.195,seconds,jac build main.jac --client web,8878,142,0,3252,12272,3891,One successful command run.
+2026-11-05T03:25:12Z,dev_iteration,jac-client-publik-provision-errors-jac#2,5.875,seconds,jac build main.jac --client web,8878,142,0,3252,12272,3891,One successful command run.
+2026-11-05T03:25:18Z,dev_iteration,jac-client-publik-provision-errors-jac#3,5.929,seconds,jac build main.jac --client web,8878,142,0,3252,12272,3891,One successful command run.
+2026-11-05T03:25:18Z,dev_iteration_median,jac-client-publik-provision-errors-jac,5.929,seconds,jac build main.jac --client web,8878,142,0,3252,12272,3891,Median of 3 successful run(s).
+2026-11-05T03:28:37Z,source_snapshot,current,12285,lines,,8856,142,0,3287,12285,3878,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:28:44Z,dev_iteration,rust-test-check-calendar-normalization-jac#1,0.703,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8856,142,0,3287,12285,3878,One successful command run.
+2026-11-05T03:28:45Z,dev_iteration,rust-test-check-calendar-normalization-jac#2,0.268,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8856,142,0,3287,12285,3878,One successful command run.
+2026-11-05T03:28:45Z,dev_iteration,rust-test-check-calendar-normalization-jac#3,0.328,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8856,142,0,3287,12285,3878,One successful command run.
+2026-11-05T03:28:45Z,dev_iteration_median,rust-test-check-calendar-normalization-jac,0.328,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8856,142,0,3287,12285,3878,Median of 3 successful run(s).
+2026-11-05T03:28:51Z,dev_iteration,jac-client-calendar-normalization-jac#1,7.735,seconds,jac build main.jac --client web,8856,142,0,3287,12285,3878,One successful command run.
+2026-11-05T03:28:59Z,dev_iteration,jac-client-calendar-normalization-jac#2,7.407,seconds,jac build main.jac --client web,8856,142,0,3287,12285,3878,One successful command run.
+2026-11-05T03:29:07Z,dev_iteration,jac-client-calendar-normalization-jac#3,7.623,seconds,jac build main.jac --client web,8856,142,0,3287,12285,3878,One successful command run.
+2026-11-05T03:29:07Z,dev_iteration_median,jac-client-calendar-normalization-jac,7.623,seconds,jac build main.jac --client web,8856,142,0,3287,12285,3878,Median of 3 successful run(s).
+2026-11-05T03:32:09Z,source_snapshot,current,12285,lines,,8846,142,0,3297,12285,3878,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:32:16Z,dev_iteration,rust-test-check-calendar-window-jac#1,0.820,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3297,12285,3878,One successful command run.
+2026-11-05T03:32:17Z,dev_iteration,rust-test-check-calendar-window-jac#2,0.318,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3297,12285,3878,One successful command run.
+2026-11-05T03:32:17Z,dev_iteration,rust-test-check-calendar-window-jac#3,0.289,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3297,12285,3878,One successful command run.
+2026-11-05T03:32:17Z,dev_iteration_median,rust-test-check-calendar-window-jac,0.318,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3297,12285,3878,Median of 3 successful run(s).
+2026-11-05T03:32:24Z,dev_iteration,jac-client-calendar-window-jac#1,8.466,seconds,jac build main.jac --client web,8846,142,0,3297,12285,3878,One successful command run.
+2026-11-05T03:32:32Z,dev_iteration,jac-client-calendar-window-jac#2,7.997,seconds,jac build main.jac --client web,8846,142,0,3297,12285,3878,One successful command run.
+2026-11-05T03:32:40Z,dev_iteration,jac-client-calendar-window-jac#3,7.845,seconds,jac build main.jac --client web,8846,142,0,3297,12285,3878,One successful command run.
+2026-11-05T03:32:40Z,dev_iteration_median,jac-client-calendar-window-jac,7.997,seconds,jac build main.jac --client web,8846,142,0,3297,12285,3878,Median of 3 successful run(s).
+2026-11-05T03:37:09Z,source_snapshot,current,12347,lines,,8846,142,0,3359,12347,3816,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:37:21Z,dev_iteration,rust-test-check-settings-policy-jac#1,0.183,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3359,12347,3816,One successful command run.
+2026-11-05T03:37:21Z,dev_iteration,rust-test-check-settings-policy-jac#2,0.181,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3359,12347,3816,One successful command run.
+2026-11-05T03:37:22Z,dev_iteration,rust-test-check-settings-policy-jac#3,0.184,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3359,12347,3816,One successful command run.
+2026-11-05T03:37:22Z,dev_iteration_median,rust-test-check-settings-policy-jac,0.183,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3359,12347,3816,Median of 3 successful run(s).
+2026-11-05T03:37:26Z,dev_iteration,jac-client-settings-policy-jac#1,5.350,seconds,jac build main.jac --client web,8846,142,0,3359,12347,3816,One successful command run.
+2026-11-05T03:37:32Z,dev_iteration,jac-client-settings-policy-jac#2,5.259,seconds,jac build main.jac --client web,8846,142,0,3359,12347,3816,One successful command run.
+2026-11-05T03:37:37Z,dev_iteration,jac-client-settings-policy-jac#3,5.303,seconds,jac build main.jac --client web,8846,142,0,3359,12347,3816,One successful command run.
+2026-11-05T03:37:37Z,dev_iteration_median,jac-client-settings-policy-jac,5.303,seconds,jac build main.jac --client web,8846,142,0,3359,12347,3816,Median of 3 successful run(s).
+2026-11-05T03:38:15Z,source_snapshot,current,12350,lines,,8846,142,0,3362,12350,3813,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:38:21Z,dev_iteration,jac-client-settings-policy-final-jac#1,5.598,seconds,jac build main.jac --client web,8846,142,0,3362,12350,3813,One successful command run.
+2026-11-05T03:38:26Z,dev_iteration,jac-client-settings-policy-final-jac#2,5.569,seconds,jac build main.jac --client web,8846,142,0,3362,12350,3813,One successful command run.
+2026-11-05T03:38:32Z,dev_iteration,jac-client-settings-policy-final-jac#3,5.563,seconds,jac build main.jac --client web,8846,142,0,3362,12350,3813,One successful command run.
+2026-11-05T03:38:32Z,dev_iteration_median,jac-client-settings-policy-final-jac,5.569,seconds,jac build main.jac --client web,8846,142,0,3362,12350,3813,Median of 3 successful run(s).
+2026-11-05T03:39:00Z,dev_iteration,rust-test-check-settings-policy-final-jac#1,0.481,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3362,12350,3813,One successful command run.
+2026-11-05T03:39:00Z,dev_iteration,rust-test-check-settings-policy-final-jac#2,0.188,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3362,12350,3813,One successful command run.
+2026-11-05T03:39:00Z,dev_iteration,rust-test-check-settings-policy-final-jac#3,0.206,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3362,12350,3813,One successful command run.
+2026-11-05T03:39:00Z,dev_iteration_median,rust-test-check-settings-policy-final-jac,0.206,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8846,142,0,3362,12350,3813,Median of 3 successful run(s).
+2026-11-05T03:40:48Z,source_snapshot,current,12342,lines,,8838,142,0,3362,12342,3821,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:40:55Z,dev_iteration,rust-test-check-empty-shortcut-preservation-jac#1,0.189,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8838,142,0,3362,12342,3821,One successful command run.
+2026-11-05T03:40:55Z,dev_iteration,rust-test-check-empty-shortcut-preservation-jac#2,0.184,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8838,142,0,3362,12342,3821,One successful command run.
+2026-11-05T03:40:55Z,dev_iteration,rust-test-check-empty-shortcut-preservation-jac#3,0.185,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8838,142,0,3362,12342,3821,One successful command run.
+2026-11-05T03:40:55Z,dev_iteration_median,rust-test-check-empty-shortcut-preservation-jac,0.185,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8838,142,0,3362,12342,3821,Median of 3 successful run(s).
+2026-11-05T03:41:00Z,dev_iteration,jac-client-empty-shortcut-preservation-jac#1,5.375,seconds,jac build main.jac --client web,8838,142,0,3362,12342,3821,One successful command run.
+2026-11-05T03:41:05Z,dev_iteration,jac-client-empty-shortcut-preservation-jac#2,5.367,seconds,jac build main.jac --client web,8838,142,0,3362,12342,3821,One successful command run.
+2026-11-05T03:41:11Z,dev_iteration,jac-client-empty-shortcut-preservation-jac#3,5.301,seconds,jac build main.jac --client web,8838,142,0,3362,12342,3821,One successful command run.
+2026-11-05T03:41:11Z,dev_iteration_median,jac-client-empty-shortcut-preservation-jac,5.367,seconds,jac build main.jac --client web,8838,142,0,3362,12342,3821,Median of 3 successful run(s).
+2026-11-05T03:49:41Z,dev_iteration,jac-client-provider-response-jac#1,5.467,seconds,jac build main.jac --client web,8818,142,0,3399,12359,3804,One successful command run.
+2026-11-05T03:49:47Z,dev_iteration,jac-client-provider-response-jac#2,5.418,seconds,jac build main.jac --client web,8818,142,0,3399,12359,3804,One successful command run.
+2026-11-05T03:49:53Z,dev_iteration,jac-client-provider-response-jac#3,5.762,seconds,jac build main.jac --client web,8818,142,0,3399,12359,3804,One successful command run.
+2026-11-05T03:49:53Z,dev_iteration_median,jac-client-provider-response-jac,5.467,seconds,jac build main.jac --client web,8818,142,0,3399,12359,3804,Median of 3 successful run(s).
+2026-11-05T03:49:55Z,dev_iteration,rust-test-check-provider-response-jac#1,1.930,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8818,142,0,3399,12359,3804,One successful command run.
+2026-11-05T03:49:56Z,dev_iteration,rust-test-check-provider-response-jac#2,0.665,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8818,142,0,3399,12359,3804,One successful command run.
+2026-11-05T03:49:56Z,dev_iteration,rust-test-check-provider-response-jac#3,0.180,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8818,142,0,3399,12359,3804,One successful command run.
+2026-11-05T03:49:56Z,dev_iteration_median,rust-test-check-provider-response-jac,0.665,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8818,142,0,3399,12359,3804,Median of 3 successful run(s).
+2026-11-05T03:49:57Z,source_snapshot,current,12359,lines,,8818,142,0,3399,12359,3804,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T03:58:07Z,dev_iteration,jac-client-provider-request-jac#1,6.231,seconds,jac build main.jac --client web,8811,142,0,3431,12384,3779,One successful command run.
+2026-11-05T03:58:13Z,dev_iteration,jac-client-provider-request-jac#2,5.965,seconds,jac build main.jac --client web,8811,142,0,3431,12384,3779,One successful command run.
+2026-11-05T03:58:19Z,dev_iteration,jac-client-provider-request-jac#3,5.972,seconds,jac build main.jac --client web,8811,142,0,3431,12384,3779,One successful command run.
+2026-11-05T03:58:19Z,dev_iteration_median,jac-client-provider-request-jac,5.972,seconds,jac build main.jac --client web,8811,142,0,3431,12384,3779,Median of 3 successful run(s).
+2026-11-05T03:58:22Z,dev_iteration,rust-test-check-provider-request-jac#1,2.422,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8811,142,0,3431,12384,3779,One successful command run.
+2026-11-05T03:58:23Z,dev_iteration,rust-test-check-provider-request-jac#2,0.659,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8811,142,0,3431,12384,3779,One successful command run.
+2026-11-05T03:58:23Z,dev_iteration,rust-test-check-provider-request-jac#3,0.195,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8811,142,0,3431,12384,3779,One successful command run.
+2026-11-05T03:58:23Z,dev_iteration_median,rust-test-check-provider-request-jac,0.659,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8811,142,0,3431,12384,3779,Median of 3 successful run(s).
+2026-11-05T03:58:24Z,source_snapshot,current,12384,lines,,8811,142,0,3431,12384,3779,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T04:03:52Z,dev_iteration,jac-client-cloud-asr-decode-jac#1,6.467,seconds,jac build main.jac --client web,8817,142,0,3458,12417,3746,One successful command run.
+2026-11-05T04:03:58Z,dev_iteration,jac-client-cloud-asr-decode-jac#2,6.100,seconds,jac build main.jac --client web,8817,142,0,3458,12417,3746,One successful command run.
+2026-11-05T04:04:05Z,dev_iteration,jac-client-cloud-asr-decode-jac#3,6.161,seconds,jac build main.jac --client web,8817,142,0,3458,12417,3746,One successful command run.
+2026-11-05T04:04:05Z,dev_iteration_median,jac-client-cloud-asr-decode-jac,6.161,seconds,jac build main.jac --client web,8817,142,0,3458,12417,3746,Median of 3 successful run(s).
+2026-11-05T04:04:07Z,dev_iteration,rust-test-check-cloud-asr-decode-jac#1,1.915,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8817,142,0,3458,12417,3746,One successful command run.
+2026-11-05T04:04:08Z,dev_iteration,rust-test-check-cloud-asr-decode-jac#2,0.673,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8817,142,0,3458,12417,3746,One successful command run.
+2026-11-05T04:04:08Z,dev_iteration,rust-test-check-cloud-asr-decode-jac#3,0.195,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8817,142,0,3458,12417,3746,One successful command run.
+2026-11-05T04:04:08Z,dev_iteration_median,rust-test-check-cloud-asr-decode-jac,0.673,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8817,142,0,3458,12417,3746,Median of 3 successful run(s).
+2026-11-05T04:04:09Z,source_snapshot,current,12417,lines,,8817,142,0,3458,12417,3746,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T04:13:01Z,dev_iteration,jac-client-dictionary-model-prune#1,5.613,seconds,jac build main.jac --client web,8803,142,0,3458,12403,3760,One successful command run.
+2026-11-05T04:13:07Z,dev_iteration,jac-client-dictionary-model-prune#2,5.521,seconds,jac build main.jac --client web,8803,142,0,3458,12403,3760,One successful command run.
+2026-11-05T04:13:13Z,dev_iteration,jac-client-dictionary-model-prune#3,5.511,seconds,jac build main.jac --client web,8803,142,0,3458,12403,3760,One successful command run.
+2026-11-05T04:13:13Z,dev_iteration_median,jac-client-dictionary-model-prune,5.521,seconds,jac build main.jac --client web,8803,142,0,3458,12403,3760,Median of 3 successful run(s).
+2026-11-05T04:13:18Z,dev_iteration,rust-check-dictionary-model-prune#1,1.895,seconds,cargo check --manifest-path src-tauri/Cargo.toml,8803,142,0,3458,12403,3760,One successful command run.
+2026-11-05T04:13:18Z,dev_iteration,rust-check-dictionary-model-prune#2,0.180,seconds,cargo check --manifest-path src-tauri/Cargo.toml,8803,142,0,3458,12403,3760,One successful command run.
+2026-11-05T04:13:18Z,dev_iteration,rust-check-dictionary-model-prune#3,0.167,seconds,cargo check --manifest-path src-tauri/Cargo.toml,8803,142,0,3458,12403,3760,One successful command run.
+2026-11-05T04:13:18Z,dev_iteration_median,rust-check-dictionary-model-prune,0.180,seconds,cargo check --manifest-path src-tauri/Cargo.toml,8803,142,0,3458,12403,3760,Median of 3 successful run(s).
+2026-11-05T04:13:21Z,source_snapshot,current,12403,lines,,8803,142,0,3458,12403,3760,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T04:18:32Z,dev_iteration,jac-client-remove-rust-dictation-actions#1,7.372,seconds,jac build main.jac --client web,8717,142,0,3458,12317,3846,One successful command run.
+2026-11-05T04:18:40Z,dev_iteration,jac-client-remove-rust-dictation-actions#2,7.273,seconds,jac build main.jac --client web,8717,142,0,3458,12317,3846,One successful command run.
+2026-11-05T04:18:47Z,dev_iteration,jac-client-remove-rust-dictation-actions#3,7.108,seconds,jac build main.jac --client web,8717,142,0,3458,12317,3846,One successful command run.
+2026-11-05T04:18:47Z,dev_iteration_median,jac-client-remove-rust-dictation-actions,7.273,seconds,jac build main.jac --client web,8717,142,0,3458,12317,3846,Median of 3 successful run(s).
+2026-11-05T04:18:54Z,dev_iteration,rust-check-remove-rust-dictation-actions#1,2.747,seconds,cargo check --manifest-path src-tauri/Cargo.toml,8717,142,0,3458,12317,3846,One successful command run.
+2026-11-05T04:18:54Z,dev_iteration,rust-check-remove-rust-dictation-actions#2,0.212,seconds,cargo check --manifest-path src-tauri/Cargo.toml,8717,142,0,3458,12317,3846,One successful command run.
+2026-11-05T04:18:54Z,dev_iteration,rust-check-remove-rust-dictation-actions#3,0.234,seconds,cargo check --manifest-path src-tauri/Cargo.toml,8717,142,0,3458,12317,3846,One successful command run.
+2026-11-05T04:18:55Z,dev_iteration_median,rust-check-remove-rust-dictation-actions,0.234,seconds,cargo check --manifest-path src-tauri/Cargo.toml,8717,142,0,3458,12317,3846,Median of 3 successful run(s).
+2026-11-05T04:18:58Z,source_snapshot,current,12317,lines,,8717,142,0,3458,12317,3846,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T04:22:30Z,dev_iteration,jac-client-remove-rust-stats-record#1,5.492,seconds,jac build main.jac --client web,8732,142,0,3458,12332,3831,One successful command run.
+2026-11-05T04:22:35Z,dev_iteration,jac-client-remove-rust-stats-record#2,5.414,seconds,jac build main.jac --client web,8732,142,0,3458,12332,3831,One successful command run.
+2026-11-05T04:22:41Z,dev_iteration,jac-client-remove-rust-stats-record#3,5.486,seconds,jac build main.jac --client web,8732,142,0,3458,12332,3831,One successful command run.
+2026-11-05T04:22:41Z,dev_iteration_median,jac-client-remove-rust-stats-record,5.486,seconds,jac build main.jac --client web,8732,142,0,3458,12332,3831,Median of 3 successful run(s).
+2026-11-05T04:22:47Z,dev_iteration,rust-check-remove-rust-stats-record#1,2.119,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8732,142,0,3458,12332,3831,One successful command run.
+2026-11-05T04:22:47Z,dev_iteration,rust-check-remove-rust-stats-record#2,0.177,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8732,142,0,3458,12332,3831,One successful command run.
+2026-11-05T04:22:47Z,dev_iteration,rust-check-remove-rust-stats-record#3,0.168,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8732,142,0,3458,12332,3831,One successful command run.
+2026-11-05T04:22:47Z,dev_iteration_median,rust-check-remove-rust-stats-record,0.177,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8732,142,0,3458,12332,3831,Median of 3 successful run(s).
+2026-11-05T04:22:53Z,source_snapshot,current,12332,lines,,8732,142,0,3458,12332,3831,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T04:27:58Z,dev_iteration,jac-client-settings-mode-string-bridge#1,5.752,seconds,jac build main.jac --client web,8662,142,0,3458,12262,3901,One successful command run.
+2026-11-05T04:28:04Z,dev_iteration,jac-client-settings-mode-string-bridge#2,5.397,seconds,jac build main.jac --client web,8662,142,0,3458,12262,3901,One successful command run.
+2026-11-05T04:28:09Z,dev_iteration,jac-client-settings-mode-string-bridge#3,5.414,seconds,jac build main.jac --client web,8662,142,0,3458,12262,3901,One successful command run.
+2026-11-05T04:28:09Z,dev_iteration_median,jac-client-settings-mode-string-bridge,5.414,seconds,jac build main.jac --client web,8662,142,0,3458,12262,3901,Median of 3 successful run(s).
+2026-11-05T04:28:15Z,dev_iteration,rust-check-settings-mode-string-bridge#1,1.934,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8662,142,0,3458,12262,3901,One successful command run.
+2026-11-05T04:28:15Z,dev_iteration,rust-check-settings-mode-string-bridge#2,0.178,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8662,142,0,3458,12262,3901,One successful command run.
+2026-11-05T04:28:15Z,dev_iteration,rust-check-settings-mode-string-bridge#3,0.171,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8662,142,0,3458,12262,3901,One successful command run.
+2026-11-05T04:28:15Z,dev_iteration_median,rust-check-settings-mode-string-bridge,0.178,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8662,142,0,3458,12262,3901,Median of 3 successful run(s).
+2026-11-05T04:28:19Z,source_snapshot,current,12262,lines,,8662,142,0,3458,12262,3901,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T04:43:17Z,dev_iteration,jac-client-settings-defaults#1,5.642,seconds,jac build main.jac --client web,8684,142,0,3488,12314,3849,One successful command run.
+2026-11-05T04:43:22Z,dev_iteration,jac-client-settings-defaults#2,5.649,seconds,jac build main.jac --client web,8684,142,0,3488,12314,3849,One successful command run.
+2026-11-05T04:43:28Z,dev_iteration,jac-client-settings-defaults#3,5.638,seconds,jac build main.jac --client web,8684,142,0,3488,12314,3849,One successful command run.
+2026-11-05T04:43:28Z,dev_iteration_median,jac-client-settings-defaults,5.642,seconds,jac build main.jac --client web,8684,142,0,3488,12314,3849,Median of 3 successful run(s).
+2026-11-05T04:43:35Z,dev_iteration,rust-check-settings-defaults#1,2.032,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8684,142,0,3488,12314,3849,One successful command run.
+2026-11-05T04:43:36Z,dev_iteration,rust-check-settings-defaults#2,0.697,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8684,142,0,3488,12314,3849,One successful command run.
+2026-11-05T04:43:36Z,dev_iteration,rust-check-settings-defaults#3,0.178,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8684,142,0,3488,12314,3849,One successful command run.
+2026-11-05T04:43:36Z,dev_iteration_median,rust-check-settings-defaults,0.697,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8684,142,0,3488,12314,3849,Median of 3 successful run(s).
+2026-11-05T04:43:39Z,source_snapshot,current,12314,lines,,8684,142,0,3488,12314,3849,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T04:44:47Z,source_snapshot,current,12325,lines,,8684,142,0,3499,12325,3838,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T04:45:02Z,dev_iteration,jac-client-settings-defaults-final#1,5.407,seconds,jac build main.jac --client web,8684,142,0,3499,12325,3838,One successful command run.
+2026-11-05T04:45:08Z,dev_iteration,jac-client-settings-defaults-final#2,5.343,seconds,jac build main.jac --client web,8684,142,0,3499,12325,3838,One successful command run.
+2026-11-05T04:45:13Z,dev_iteration,jac-client-settings-defaults-final#3,5.354,seconds,jac build main.jac --client web,8684,142,0,3499,12325,3838,One successful command run.
+2026-11-05T04:45:13Z,dev_iteration_median,jac-client-settings-defaults-final,5.354,seconds,jac build main.jac --client web,8684,142,0,3499,12325,3838,Median of 3 successful run(s).
+2026-11-05T04:45:18Z,dev_iteration,rust-check-settings-defaults-final#1,1.588,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8684,142,0,3499,12325,3838,One successful command run.
+2026-11-05T04:45:19Z,dev_iteration,rust-check-settings-defaults-final#2,0.647,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8684,142,0,3499,12325,3838,One successful command run.
+2026-11-05T04:45:19Z,dev_iteration,rust-check-settings-defaults-final#3,0.180,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8684,142,0,3499,12325,3838,One successful command run.
+2026-11-05T04:45:19Z,dev_iteration_median,rust-check-settings-defaults-final,0.647,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8684,142,0,3499,12325,3838,Median of 3 successful run(s).
+2026-11-05T04:47:46Z,dev_iteration,jac-client-diagnostics-codes#1,6.942,seconds,jac build main.jac --client web,8642,142,0,3508,12292,3871,One successful command run.
+2026-11-05T04:47:53Z,dev_iteration,jac-client-diagnostics-codes#2,6.890,seconds,jac build main.jac --client web,8642,142,0,3508,12292,3871,One successful command run.
+2026-11-05T04:48:00Z,dev_iteration,jac-client-diagnostics-codes#3,6.649,seconds,jac build main.jac --client web,8642,142,0,3508,12292,3871,One successful command run.
+2026-11-05T04:48:00Z,dev_iteration_median,jac-client-diagnostics-codes,6.890,seconds,jac build main.jac --client web,8642,142,0,3508,12292,3871,Median of 3 successful run(s).
+2026-11-05T04:48:08Z,dev_iteration,rust-check-diagnostics-codes#1,2.902,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8642,142,0,3508,12292,3871,One successful command run.
+2026-11-05T04:48:09Z,dev_iteration,rust-check-diagnostics-codes#2,0.921,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8642,142,0,3508,12292,3871,One successful command run.
+2026-11-05T04:48:09Z,dev_iteration,rust-check-diagnostics-codes#3,0.254,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8642,142,0,3508,12292,3871,One successful command run.
+2026-11-05T04:48:09Z,dev_iteration_median,rust-check-diagnostics-codes,0.921,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8642,142,0,3508,12292,3871,Median of 3 successful run(s).
+2026-11-05T04:48:12Z,source_snapshot,current,12292,lines,,8642,142,0,3508,12292,3871,"Nonblank physical source lines; app sources only, generated assets excluded."
+2026-11-05T05:10:48Z,dev_iteration,jac-client-meeting-workflow#1,7.565,seconds,jac build main.jac --client web,8482,142,0,3510,12134,4029,One successful command run.
+2026-11-05T05:10:56Z,dev_iteration,jac-client-meeting-workflow#2,7.106,seconds,jac build main.jac --client web,8482,142,0,3510,12134,4029,One successful command run.
+2026-11-05T05:11:03Z,dev_iteration,jac-client-meeting-workflow#3,7.141,seconds,jac build main.jac --client web,8482,142,0,3510,12134,4029,One successful command run.
+2026-11-05T05:11:03Z,dev_iteration_median,jac-client-meeting-workflow,7.141,seconds,jac build main.jac --client web,8482,142,0,3510,12134,4029,Median of 3 successful run(s).
+2026-11-05T05:11:09Z,dev_iteration,rust-check-meeting-workflow#1,2.318,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8482,142,0,3510,12134,4029,One successful command run.
+2026-11-05T05:11:10Z,dev_iteration,rust-check-meeting-workflow#2,0.793,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8482,142,0,3510,12134,4029,One successful command run.
+2026-11-05T05:11:10Z,dev_iteration,rust-check-meeting-workflow#3,0.220,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8482,142,0,3510,12134,4029,One successful command run.
+2026-11-05T05:11:10Z,dev_iteration_median,rust-check-meeting-workflow,0.793,seconds,cargo check --tests --manifest-path src-tauri/Cargo.toml,8482,142,0,3510,12134,4029,Median of 3 successful run(s).
+2026-11-05T05:11:15Z,source_snapshot,current,12134,lines,,8482,142,0,3510,12134,4029,"Nonblank physical source lines; app sources only, generated assets excluded."

@@ -1,0 +1,16 @@
+[package]
+name = "openflow-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+# The shared, platform-agnostic brain: dictation state machine, session pipeline
+# orchestration, ASR/cleanup trait seams, dictionary, settings, storage. The native
+# and ML backends plug in behind traits defined here.
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

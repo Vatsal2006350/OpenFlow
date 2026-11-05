@@ -1,0 +1,17 @@
+[package]
+name = "openflow-cleanup"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+# Credentialed cleanup HTTP adapters. Jac supplies the complete message list
+# and output budget; this crate handles provider-specific transport only.
+[dependencies]
+openflow-core = { path = "../openflow-core" }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+reqwest = { version = "0.12", features = ["blocking", "json", "multipart", "rustls-tls"], default-features = false }
+hound = "3"

@@ -1,0 +1,32 @@
+# OpenFlow — Cargo workspace root.
+# Members are added as each crate is scaffolded (a workspace may only list dirs that exist).
+[workspace]
+resolver = "2"
+members = [
+    "crates/openflow-core",
+    "crates/openflow-audio",
+    "crates/openflow-asr",
+    "crates/openflow-cleanup",
+    "crates/openflow-llm-worker",
+    "crates/openflow-sidecar",
+    "src-tauri",
+]
+
+[workspace.package]
+version = "0.2.2"
+edition = "2021"
+rust-version = "1.82"
+license = "MIT"
+authors = ["OpenFlow"]
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1.0.95"
+thiserror = "1"
+tracing = "0.1"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

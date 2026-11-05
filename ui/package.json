@@ -1,0 +1,8 @@
+{
+  "name": "openflow-ui",
+  "private": true,
+  "version": "0.2.2",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.4.0"
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>OpenFlow uses your microphone to transcribe what you say into text.</string>
+	<key>NSAudioCaptureUsageDescription</key>
+	<string>OpenFlow captures Mac audio during a meeting so it can transcribe the other participants. Audio is processed on this Mac and is not uploaded.</string>
+	<key>NSAccessibilityUsageDescription</key>
+	<string>OpenFlow needs Accessibility access to type transcribed text into other apps and to detect the Fn key globally.</string>
+	<key>NSInputMonitoringUsageDescription</key>
+	<string>OpenFlow uses Input Monitoring for reliable key detection when triggering dictation.</string>
+</dict>
+</plist>
